@@ -6,6 +6,7 @@ Electronics,"Controller board, stepper drivers, wiring and connectors",1,85,7480
 Toolhead,"Hotend, extruder and compatible toolhead components",1,55,4840,"Planning estimate; verify EVA/toolhead compatibility",
 Power,"Power supply, fuses, switches and wiring accessories",1,45,3960,"Planning estimate; verify ratings and use enclosed, properly rated components",
 Printed parts,"Filament for required printed printer components",1,25,2200,"Planning estimate; confirm material and print quantities",
+Small hardware & consumables,"Assorted screws, T-nuts, nuts, washers, heat-set inserts, spacers, cable ties and cable-management items",1,,,"Itemized in BOM/Small-Hardware-and-Consumables.csv; exact quantities and supplier quotes still need confirmation; excluded from this preliminary total",
 Shipping / contingency,"Shipping and price variation allowance",1,25,2200,"Allowance only; import duties and taxes may be extra",
-TOTAL ESTIMATE,,,"=SUM(D2:D9)","=SUM(E2:E9)","Preliminary estimate; not supplier quotations",
-IMPORTANT,,,,,"Estimates use an illustrative exchange rate of 1 USD = INR 88. Replace with verified quotes, exact quantities and current exchange rate before submitting to Hack Club."
+TOTAL ESTIMATE,,,=SUM(D2:D10),=SUM(E2:E10),"Preliminary estimate; small hardware not yet priced",
+IMPORTANT,,,,,,"Estimates use an illustrative exchange rate of 1 USD = INR 88. Replace with verified quotes, exact quantities and current exchange rate before submitting to Hack Club."
