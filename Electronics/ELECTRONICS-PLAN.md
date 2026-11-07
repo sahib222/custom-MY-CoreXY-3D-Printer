@@ -55,7 +55,7 @@ The board provides five driver interfaces, but that does **not** prove it can dr
 
 ## 5. Source-design conflicts still open
 
-1. **Controller:** the original product page names MKS Monster8, while other original chapters mention different controller examples. This project has selected SKR Mini E3 V3.0 as a replacement candidate; it is not the original board.
+1. **Controller:** the original product page and wiring chapters refer to other controller examples. This project has selected SKR Mini E3 V3.0 as a replacement candidate; its pin mapping must be adapted and verified for this printer.
 2. **Motor count:** source sections conflict about one versus four Z motors and five versus more driver channels. Confirm the exact CAD revision and wiring.
 3. **Power:** the source mentions a 24 V system, a 240 V heated bed, a separate 5 V supply and different 24 V supply examples. Confirm the exact bed and complete load before choosing supplies.
 4. **Toolhead and sensors:** verify the exact heater, thermistor, fans and endstop types against the selected hardware.
