@@ -1,0 +1,13 @@
+Item,Typical specification / size,Planning quantity,Use,Status / notes
+Socket-head screws,M3 assorted lengths (8/10/12/16/20 mm),TBD,Printed-part and accessory fastening,Confirm lengths and counts from final CAD/assembly
+Socket-head screws,M4 assorted lengths (8/10/12/16/20/25 mm),TBD,Brackets and mechanical assemblies,Confirm lengths and counts from final CAD/assembly
+Frame bolts,M5 or profile-compatible fasteners,TBD,Aluminium extrusion frame joints,Match the actual extrusion slot/profile and brackets
+T-nuts,Profile-compatible M5 T-nuts,TBD,Attach brackets and panels to extrusion,Verify profile series before ordering
+Hex nuts,M3 and M4 matching nuts,TBD,Through-bolted printed parts and brackets,Only where the design does not use captive nuts
+Washers,M3/M4/M5 matching flat washers,TBD,Load spreading and fastening,Choose sizes to match selected bolts
+Heat-set inserts,Brass M3 inserts compatible with printed-part wall thickness,TBD,Reusable threaded joints in printed parts,Confirm insert dimensions and hole geometry
+Spacers / standoffs,M3/M4 compatible assorted lengths,TBD,Clearance and mounting,Lengths depend on final electronics and panel layout
+Cable ties,Small and medium nylon ties,TBD,Cable routing and strain relief,Keep clear of moving belts, rails and hot surfaces
+Cable clips / mounts,Printed or profile-compatible clips,TBD,Wire and cable-chain routing,Confirm locations after motion-system layout
+Cable sleeve,Expandable braided sleeve or suitable loom,TBD,Protect and bundle low-voltage wiring,Keep away from hot and moving parts
+Adhesive labels,Heat-resistant wire labels or markers,TBD,Identify wiring during assembly,Use clear voltage/polarity labels
