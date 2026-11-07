@@ -1,17 +1,20 @@
-Category,Item,Qty,Required specification,Selected part,Unit price,Source URL,Status,Notes
-Controller,Main controller board,1,32-bit 3D-printer board with sufficient stepper/heater/fan/sensor outputs,,,,Not selected,Choose only after confirming motor count and firmware
-Motion,Stepper drivers,As required,Compatible with selected board and motor current,,,,Not selected,May be integrated or plug-in depending on board
-Motion,Stepper motors,As required,Exact count/model/current to be verified from final build,,,,,Verify,Do not assume motor count from generic CoreXY layouts
-Thermal,Hotend heater,1,Match selected hotend voltage and controller rating,,,,Not selected,Confirm wattage and connector
-Thermal,Hotend temperature sensor,1,Compatible sensor type and firmware support,,,,Not selected,Confirm exact sensor model
-Thermal,Bed heater,If fitted,Only if final build includes heated bed; match supply and controller,,,,Not selected,Do not purchase until bed design is confirmed
-Thermal,Bed temperature sensor,If fitted,Compatible with selected bed and firmware,,,,Not selected,Only if heated bed is fitted
-Motion sensing,Endstop / homing sensors,As required,Compatible with final axis arrangement and controller inputs,,,,Not selected,Confirm mechanical homing design
-Cooling,Hotend heatsink fan,1,Voltage/size/current compatible with hotend and controller,,,,Not selected,Confirm hotend specification
-Cooling,Part-cooling fan,As required,Voltage/size/current compatible with toolhead,,,,Not selected,Confirm toolhead duct design
-Cooling,Electronics fan,As required,Voltage/size/current compatible with controller enclosure,,,,Not selected,Confirm enclosure airflow
-Power,Enclosed DC power supply,1,Certified; voltage and wattage based on documented load calculation,,,,Not selected,Do not select wattage by guess
-Protection,Fuses and protective devices,As required,Rated for actual circuit and wiring,,,,To engineer,Final ratings require load and wire calculations
-Wiring,Wire and connectors,As required,Insulation/gauge/connectors matched to each circuit load,,,,Not selected,Keep away from moving and hot parts
-Interface,Display or host computer,Optional,Compatible with selected firmware/controller,,,,Optional,Klipper host or supported display
-Safety,Power isolation / emergency stop,As required,Appropriate accessible isolation and protective design,,,,To review,Have electrical design reviewed by a qualified adult
+Category,Item,Qty,Source specification / reference,Selected part,Unit price,Source URL,Status,Compatibility notes
+Controller,Main controller board,1,"MKS Monster8 named on MY-CoreXY product page",,,,Verify exact revision,"BOM and mounting chapter mention other example boards; do not assume interchangeability"
+Motion,Stepper drivers,5,"TMC2209 or similar listed in electronics BOM and controller setup",,,,Verify count and model,"Check board revision, driver voltage/current and UART/SPI support"
+Motion,XY stepper motors,2,"A/B motors shown in wiring chapter",,,,Verify exact motor model,"Confirm motor current, connector and stepper count"
+Motion,Z stepper motor(s),Unconfirmed,"Z-motion BOM says one; DC wiring chapter describes four Z motor connections",,,,Conflict - verify,"Do not purchase until exact CAD/assembly revision is checked"
+Motion,Extruder stepper motor,1,"Extruder motor shown in low-voltage wiring chapter",,,,Verify exact motor model,"Match EVA extruder and driver current"
+Host,Klipper host computer,1,"Raspberry Pi shown in component mounting chapter",,,,Verify model,"Exact Pi model and storage not specified"
+Power,5 V DC supply,1,"Mean Well RS-25-5 or similar example",,,,Verify load,"Mounting chapter example; check Pi and accessory load"
+Power,24 V DC supply,1,"Mean Well LRS-200-24 example; accessories BOM also mentions 24 V 350 W",,,,Conflict - verify,"Calculate actual load; do not choose wattage from estimate"
+Thermal,Hotend heater cartridge,1,"24 V 40 W listed in electronics BOM",,,,Verify hotend compatibility,"Confirm cartridge dimensions and exact hotend"
+Thermal,Hotend thermistor,1,"100K NTC listed in electronics BOM",,,,Verify sensor model,"Confirm thermistor curve/type in firmware"
+Thermal,Heated bed,If fitted,"Product page says 240 V bed; wiring chapter references AC bed and SSR",,,,Conflict - electrician review,"Do not buy until exact bed label and design revision are confirmed"
+Power protection,SSR for bed,If required,"SSR referenced in wiring chapter",,,,Professional design required,"Must be selected and installed by qualified adult electrician"
+Cooling,Cooling fans,2 listed,"4010 or 5015 examples in electronics BOM",,,,Verify actual fan positions,"Check voltage/current and hotend/toolhead requirements"
+Homing,Endstop switches,3,"Three switches listed; X/Y/Z described in mounting chapter",,,,Verify switch type,"Confirm NC/NO wiring and final homing design from board documentation"
+Wiring,Wire harness and connectors,As required,"Wiring kit listed generically",,,,Not selected,"Specify from actual current, voltage, temperature and movement requirements"
+Printed,Controller box,1,"P-EL-0001",,,,Listed,"Confirm STL matches the electronics layout"
+Printed,Controller box lid,1,"P-EL-0002",,,,Listed,"Confirm STL matches the electronics layout"
+Printed,Fan holder,2,"P-EL-0003",,,,Listed,"Confirm fan size and mounting"
+Safety,Power isolation / grounding / fusing,As required,"Safety-critical design items",,,,Qualified electrician review,"No mains wiring instructions in this BOM"
