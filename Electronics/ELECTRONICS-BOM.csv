@@ -1,6 +1,6 @@
 Category,Item,Qty,Estimated unit price (INR),Estimated line total (INR),Supplier link,Status / compatibility notes
-"Controller","Main controller board","1","6500","6500","https://www.amazon.in/s?k=MKS+Monster8+3D+printer+controller","Planning allowance; verify exact board revision and firmware support"
-"Motion","Stepper drivers","5","450","2250","https://www.amazon.in/s?k=TMC2209+stepper+driver+module","Per-driver estimate; verify compatibility with controller"
+"Controller","BIGTREETECH SKR Mini E3 V3.0 controller board","1","4000","4000","https://www.amazon.in/s?k=BIGTREETECH+SKR+Mini+E3+V3.0","Estimated allowance; five onboard TMC2209 driver interfaces; confirm exact motor mapping and board revision"
+"Motion","Separate stepper driver modules","0","450","0","https://www.amazon.in/s?k=TMC2209+stepper+driver+module","Not included: SKR Mini E3 V3.0 has five onboard TMC2209 driver interfaces; verify motor-channel requirements before purchase"
 "Motion","XY stepper motors","2","900","1800","https://www.amazon.in/s?k=NEMA17+stepper+motor+3D+printer","Per-motor estimate; verify current, length and connector"
 "Motion","Z stepper motor(s)","1","1800","1800","https://www.amazon.in/s?k=NEMA17+stepper+motor+3D+printer","Budget allowance only; source documents conflict between one and four Z motors; do not order until verified"
 "Motion","Extruder stepper motor","1","900","900","https://www.amazon.in/s?k=NEMA17+extruder+stepper+motor","Verify EVA extruder compatibility"
@@ -19,4 +19,4 @@ Category,Item,Qty,Estimated unit price (INR),Estimated line total (INR),Supplier
 "Printed","Fan holder","2","150","300","https://www.amazon.in/s?k=3D+printer+filament+PETG","Combined filament allowance for two; print part P-EL-0003"
 "Safety","Power isolation / grounding / fusing hardware","1","1500","1500","https://www.amazon.in/s?k=electrical+enclosure+fuse+terminal+block+India","Provisional allowance; final design and installation must be reviewed by qualified adult electrician"
 "Shipping","Shipping / delivery allowance","1","1800","1800","https://www.amazon.in/","Estimated India delivery allowance; actual seller, location, package weight and taxes may change this"
-"TOTAL","Total including shipping","1","","33760","","Planning estimate only; not supplier quotations. Verify specifications, live price, seller availability, GST and delivery before purchase."
+"TOTAL","Total including shipping","1","","29010","","Planning estimate only; not supplier quotations. Verify specifications, live price, seller availability, GST and delivery before purchase."
