@@ -79,7 +79,7 @@ A possible future feature is a small monitoring system using a microcontroller a
 
 ## Bill of materials (India planning estimate)
 
-The itemised master BOM is [BOM.csv](BOM.csv) in the repository root. It includes an estimated price and an India-accessible supplier search link for each listed line, a separate shipping allowance, and a total including shipping. **These are budget estimates, not live quotations or confirmed compatible selections.** Several source-design details remain unresolved (especially Z-motor count, controller revision, power-supply sizing and heated-bed arrangement). Check specifications, current seller prices, GST and delivery before ordering. Mains-powered parts and wiring must be reviewed by a qualified adult electrician.
+The itemised master BOM is [BOM.csv](BOM.csv) in the repository root. It includes an estimated price and an India-accessible supplier search link for each listed line, a separate shipping allowance, and a total including shipping. **These are budget estimates, not live quotations or confirmed compatible selections.** Several source-design details remain unresolved (especially Z-motor driver grouping, controller revision, power-supply sizing and heated-bed arrangement). Check specifications, current seller prices, GST and delivery before ordering. Mains-powered parts and wiring must be reviewed by a qualified adult electrician.
 
 ## Funding and budget
 
@@ -101,4 +101,4 @@ Progress updates, CAD revisions, supplier quotations, assembly photographs and t
 - [Preliminary electronics plan](Electronics/ELECTRONICS-PLAN.md)
 - [Electronics BOM (unselected parts and quote tracker)](Electronics/ELECTRONICS-BOM.csv)
 
-The planned controller is the **BIGTREETECH SKR Mini E3 V3.0**. It has five onboard TMC2209 driver interfaces and documented Klipper support. This is a replacement candidate, not the original board specified by the MY-CoreXY source. The exact motor count and Z-axis arrangement still need confirmation before the board can be treated as compatible. See [Electronics/ELECTRONICS-PLAN.md](Electronics/ELECTRONICS-PLAN.md).
+The planned controller is the **BIGTREETECH SKR Mini E3 V3.0**. It has five onboard TMC2209 driver interfaces and documented Klipper support. This is a replacement candidate, not the original board specified by the MY-CoreXY source. The official assembly guide confirms four Z-drive motors. The board has only two Z driver channels, so the original motor grouping and current requirements must be confirmed before compatibility can be claimed. See [Electronics/ELECTRONICS-PLAN.md](Electronics/ELECTRONICS-PLAN.md).
