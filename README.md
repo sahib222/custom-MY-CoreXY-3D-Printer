@@ -25,12 +25,26 @@ The original designer and source project are credited. This repository is for do
 | Path | Contents |
 |---|---|
 | `BOM/Materials-and-Cost.csv` | Preliminary category-level budget estimate |
-| `CAD/` | Planned location for CAD exports model |
+| `CAD/` | CAD models and exports |
 | `Images/` | Planned location for design screenshots and build photos |
 | `Electronics/` | Planned location for wiring diagrams and controller documentation |
 | `Documentation/` | Planned location for design notes, build log and test results |
 
 Some folders may be added as the project progresses. Only files that have actually been uploaded are available in this repository.
+
+## Images
+
+Project images will be collected here as the design and build progress.
+
+| Image | Description |
+|---|---|
+| Overall printer | Full MY-CoreXY CAD assembly |
+| Frame and gantry | Frame, rails and CoreXY motion layout |
+| Electronics | Controller and electronics mounting layout |
+| Printed parts | Printed components before assembly |
+| Build progress | Assembly and testing photographs |
+
+Image files will be stored in the `Images/` folder. The table will be updated with links when the actual images are uploaded. No placeholder images are presented as completed project evidence.
 
 ## Main subsystems
 
