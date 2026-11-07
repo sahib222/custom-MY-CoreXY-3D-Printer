@@ -76,6 +76,11 @@ Exact specifications and quantities will be recorded in the BOM after checking t
 
 A possible future feature is a small monitoring system using a microcontroller and vibration sensor to record machine vibration and help identify changes that may indicate maintenance is needed. This is a planned experiment, not a completed or validated safety system.
 
+
+## Bill of materials (India planning estimate)
+
+The itemised master BOM is [BOM.csv](BOM.csv) in the repository root. It includes an estimated price and an India-accessible supplier search link for each listed line, a separate shipping allowance, and a total including shipping. **These are budget estimates, not live quotations or confirmed compatible selections.** Several source-design details remain unresolved (especially Z-motor count, controller revision, power-supply sizing and heated-bed arrangement). Check specifications, current seller prices, GST and delivery before ordering. Mains-powered parts and wiring must be reviewed by a qualified adult electrician.
+
 ## Funding and budget
 
 The preliminary estimate is recorded in `BOM/Materials-and-Cost.csv`. It is a planning estimate, not a supplier quote. The listed costs, exchange rate, quantities, compatibility, shipping, customs and taxes must be verified before submitting a final funding request or placing orders.
