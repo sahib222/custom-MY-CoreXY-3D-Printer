@@ -4,6 +4,12 @@ A student hardware project to build and document a CoreXY 3D printer based on th
 
 > **Project status:** Design and planning. The current reconstructed reference assembly is for visual planning only; it is not yet a mechanically validated, manufacturing-ready CAD assembly. Exact part compatibility, dimensions, quantities and supplier prices must be checked before purchasing.
 
+## About
+
+MY-CoreXY is a CoreXY-style 3D printer project based on the design by EdgarMata. The machine uses a rigid aluminium-extrusion frame, belt-driven CoreXY movement for the X/Y axes, a fixed build platform and a gantry that moves along the Z axis. This repository documents the process of understanding the original design, checking its parts and electronics, preparing a bill of materials, and working towards a safe, tested build.
+
+This is an independent student build and learning project, not the official MY-Machines product. The current project is still in the design and planning stage; final dimensions, component choices and assembly details must be verified before construction.
+
 ## Project goals
 
 - Build a working CoreXY 3D printer while learning mechanical design, CAD, electronics and fabrication.
