@@ -75,3 +75,14 @@ This journal explains what I worked on and why I made each choice. I use simple 
 7. Test the printer safely with suitable adult supervision, especially for power-related work.
 
 I will add a new dated entry when I make real progress. I will not use an old image to pretend that a later stage has already been completed.
+
+
+### 7 November 2026 — Choosing a controller board
+
+**What I did:** I changed the planned controller to the BIGTREETECH SKR Mini E3 V3.0 and updated the project BOM and electronics notes.
+
+**Why I chose it:** It has onboard TMC2209 motor-driver interfaces and documented Klipper support, so separate driver modules are not included in the current estimate.
+
+**What still needs checking:** The original MY-CoreXY files do not agree about the Z-motor arrangement. I need to confirm the number of independently controlled motors before I can say this board is compatible or buy it.
+
+**Status:** The board is the selected budget candidate, not a tested or confirmed final choice.
