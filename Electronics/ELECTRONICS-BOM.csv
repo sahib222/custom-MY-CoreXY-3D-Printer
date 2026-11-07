@@ -1,0 +1,17 @@
+Category,Item,Qty,Required specification,Selected part,Unit price,Source URL,Status,Notes
+Controller,Main controller board,1,32-bit 3D-printer board with sufficient stepper/heater/fan/sensor outputs,,,,Not selected,Choose only after confirming motor count and firmware
+Motion,Stepper drivers,As required,Compatible with selected board and motor current,,,,Not selected,May be integrated or plug-in depending on board
+Motion,Stepper motors,As required,Exact count/model/current to be verified from final build,,,,,Verify,Do not assume motor count from generic CoreXY layouts
+Thermal,Hotend heater,1,Match selected hotend voltage and controller rating,,,,Not selected,Confirm wattage and connector
+Thermal,Hotend temperature sensor,1,Compatible sensor type and firmware support,,,,Not selected,Confirm exact sensor model
+Thermal,Bed heater,If fitted,Only if final build includes heated bed; match supply and controller,,,,Not selected,Do not purchase until bed design is confirmed
+Thermal,Bed temperature sensor,If fitted,Compatible with selected bed and firmware,,,,Not selected,Only if heated bed is fitted
+Motion sensing,Endstop / homing sensors,As required,Compatible with final axis arrangement and controller inputs,,,,Not selected,Confirm mechanical homing design
+Cooling,Hotend heatsink fan,1,Voltage/size/current compatible with hotend and controller,,,,Not selected,Confirm hotend specification
+Cooling,Part-cooling fan,As required,Voltage/size/current compatible with toolhead,,,,Not selected,Confirm toolhead duct design
+Cooling,Electronics fan,As required,Voltage/size/current compatible with controller enclosure,,,,Not selected,Confirm enclosure airflow
+Power,Enclosed DC power supply,1,Certified; voltage and wattage based on documented load calculation,,,,Not selected,Do not select wattage by guess
+Protection,Fuses and protective devices,As required,Rated for actual circuit and wiring,,,,To engineer,Final ratings require load and wire calculations
+Wiring,Wire and connectors,As required,Insulation/gauge/connectors matched to each circuit load,,,,Not selected,Keep away from moving and hot parts
+Interface,Display or host computer,Optional,Compatible with selected firmware/controller,,,,Optional,Klipper host or supported display
+Safety,Power isolation / emergency stop,As required,Appropriate accessible isolation and protective design,,,,To review,Have electrical design reviewed by a qualified adult
