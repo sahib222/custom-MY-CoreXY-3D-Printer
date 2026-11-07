@@ -19,16 +19,17 @@ Official references:
 
 ## 2. Important compatibility check
 
-The board provides five driver interfaces, but that does **not** prove it can drive every motor in the MY-CoreXY design as currently downloaded.
+The official assembly guide confirms **four Z-drive assemblies, each housing a motor**. The source electronics BOM lists five stepper drivers. The SKR Mini E3 V3.0 has five driver interfaces: X, Y, Z-A, Z-B and E. This gives two Z driver channels, not four independently controlled Z channels. The exact original motor grouping and current requirements still need verification. The board therefore cannot yet be declared compatible.
 
 - The two CoreXY motors need two independently controlled driver channels.
 - The board has two Z driver interfaces, Z-A and Z-B.
 - The extruder needs a driver channel.
-- The original MY-CoreXY wiring information appears to describe four Z-motor connections in one section, while other source material lists a different Z-motor count.
-- If the actual printer needs four independently controlled Z motors in addition to the two CoreXY motors and extruder, five driver channels will not be enough.
-- If the final design uses fewer independently controlled motors, the pin mapping and motor arrangement still need to be checked against the exact assembly revision.
+- The official assembly guide shows four physical Z-drive motors.
+- Four Z motors plus two CoreXY motors and one extruder represent seven physical motors.
+- The selected board exposes only two Z driver channels, so four independently controlled Z motors cannot each have their own driver channel on this board.
+- The original BOM lists five drivers, suggesting the source design may group motors onto fewer driver channels, but the exact grouping and electrical suitability are not confirmed by the sources checked so far. Do not assume paired motors are safe or compatible.
 
-**Decision:** Keep the SKR Mini E3 V3.0 as the selected budget candidate, but mark motor compatibility as **not yet verified**. Do not order until the designer's motor count and wiring arrangement are confirmed.
+**Decision:** Keep the SKR Mini E3 V3.0 as a candidate only. Four Z-drive motors are confirmed, but the required driver grouping is not. Do not order until the designer's intended motor grouping, driver current requirements and firmware configuration are confirmed.
 
 ## 3. Other electronics
 
@@ -56,7 +57,7 @@ The board provides five driver interfaces, but that does **not** prove it can dr
 ## 5. Source-design conflicts still open
 
 1. **Controller:** the original product page and wiring chapters refer to other controller examples. This project has selected SKR Mini E3 V3.0 as a replacement candidate; its pin mapping must be adapted and verified for this printer.
-2. **Motor count:** source sections conflict about one versus four Z motors and five versus more driver channels. Confirm the exact CAD revision and wiring.
+2. **Motor / driver count:** the official assembly guide confirms four Z-drive motors, while the electronics BOM lists five drivers. Confirm how the four Z motors are assigned to the two Z driver channels before selecting the controller.
 3. **Power:** the source mentions a 24 V system, a 240 V heated bed, a separate 5 V supply and different 24 V supply examples. Confirm the exact bed and complete load before choosing supplies.
 4. **Toolhead and sensors:** verify the exact heater, thermistor, fans and endstop types against the selected hardware.
 
@@ -69,8 +70,9 @@ This document does **not** provide a mains wiring procedure or a ready-to-use wi
 ## 7. Verification checklist
 
 - [ ] Confirm the exact MY-CoreXY revision represented by the downloaded CAD/STLs.
-- [ ] Confirm the number of independently controlled XY, Z and extruder motors.
-- [ ] Confirm whether the two Z driver interfaces on this board suit the actual Z arrangement.
+- [x] Confirm four physical Z-drive motor assemblies in the official assembly guide.
+- [ ] Confirm the original designer's intended grouping of four Z motors across the available driver channels.
+- [ ] Confirm whether the two Z driver interfaces on this board can safely support the intended motor grouping and current requirements.
 - [ ] Confirm the exact SKR Mini E3 V3.0 revision and obtain its official pinout.
 - [ ] Map the final CoreXY motor, endstop, heater, thermistor and fan signals to the board.
 - [ ] Confirm the Klipper host computer and storage.
@@ -81,6 +83,7 @@ This document does **not** provide a mains wiring procedure or a ready-to-use wi
 ## Sources
 
 - MY-CoreXY product overview: https://my-machines.com/my-corexy-3d-printer
+- MY-CoreXY Z-drive assembly guide (confirms four motorised Z-drive assemblies): https://docs.my-machines.com/3d-printers/my-corexy/assembly/02-z-drives-and-idlers/
 - MY-CoreXY electronics BOM: https://docs.my-machines.com/3d-printers/my-corexy/bom/electronics/
 - MY-CoreXY wiring chapters: https://docs.my-machines.com/3d-printers/my-corexy/wiring/
 - BIGTREETECH SKR Mini E3 V3.0 specifications: https://github.com/bigtreetech/docs/blob/master/docs/SKR%20MINI%20E3.md
