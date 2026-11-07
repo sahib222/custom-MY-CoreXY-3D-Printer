@@ -40,7 +40,7 @@ For every item, record:
 - Check smooth movement and alignment before powering motors.
 
 ### E. Electronics and commissioning
-- Use the BIGTREETECH SKR Mini E3 V3.0 as the planned controller candidate; verify its five onboard driver interfaces against the exact motor count before purchase. Finalise motors, power supply and wiring only after compatibility checks.
+- Use the BIGTREETECH SKR Mini E3 V3.0 as the planned controller candidate; verify its five onboard driver interfaces against the four physical Z-drive motors and the intended motor grouping before purchase. Finalise motors, power supply and wiring only after compatibility checks.
 - Verify electrical ratings, grounding, fusing and enclosure before connecting power.
 - Configure firmware and test motion in a controlled, supervised manner.
 - Calibrate and perform documented test prints.
