@@ -80,4 +80,4 @@ Progress updates, CAD revisions, supplier quotations, assembly photographs and t
 - [Preliminary electronics plan](Electronics/ELECTRONICS-PLAN.md)
 - [Electronics BOM (unselected parts and quote tracker)](Electronics/ELECTRONICS-BOM.csv)
 
-The electronics documents are planning drafts. Exact board, drivers, motors, heaters, sensors, fans, power supply and protection must be confirmed against the final build before purchase or wiring.
+The electronics documents compare the MY-CoreXY product page, BOM and wiring chapters. Those sources conflict on the controller board, motor/driver count and heated-bed power, so the documents flag these for verification instead of presenting an unsafe or unverified shopping list.
