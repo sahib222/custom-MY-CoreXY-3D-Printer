@@ -40,17 +40,13 @@ Some folders may be added as the project progresses. Only files that have actual
 
 ## Images
 
-Project images will be collected here as the design and build progress.
+### Overall MY-CoreXY design reference
 
-| Image | Description |
-|---|---|
-| Overall printer | Full MY-CoreXY CAD assembly |
-| Frame and gantry | Frame, rails and CoreXY motion layout |
-| Electronics | Controller and electronics mounting layout |
-| Printed parts | Printed components before assembly |
-| Build progress | Assembly and testing photographs |
+![MY-CoreXY printer design reference](Images/ME_-_Core_XY_03.webp)
 
-Image files will be stored in the `Images/` folder. The table will be updated with links when the actual images are uploaded. No placeholder images are presented as completed project evidence.
+*CAD-style design reference supplied for this project. It shows the intended printer layout; it is not a photograph of a completed build.*
+
+Additional full-model CAD screenshots, electronics layout, schematic and wiring-diagram images will be added when those files are ready. See [Images/](Images/) for image assets and [JOURNAL.md](JOURNAL.md) for dated progress notes.
 
 ## Main subsystems
 
