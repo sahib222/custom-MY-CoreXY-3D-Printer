@@ -1,64 +1,76 @@
 # Electronics Plan — MY-CoreXY
 
-> Status: preliminary planning only. This is not a verified wiring diagram or purchase-ready BOM. Confirm every item against the exact motor, hotend, fan, sensor and mechanical configuration before buying.
+> **Status: research-based draft, not a purchase-ready design.** I compared the MY-CoreXY product page, its electronics BOM and wiring chapters. Those sources contain conflicting board and power details, so the unresolved items below are deliberately marked for verification. Do not buy parts or wire the printer from this draft alone.
 
-## 1. Proposed control architecture
+## 1. What the MY-CoreXY sources currently say
 
-The printer electronics will use a 24 V DC system, subject to confirmation against the selected components.
-
-- **Main controller:** 32-bit 3D-printer control board with enough stepper-driver channels for the final axis and extruder arrangement.
-- **Motion drivers:** compatible stepper drivers selected for the motors and controller-board voltage/current limits.
-- **Motors:** X, Y, Z-axis motor arrangement and extruder motor to be confirmed from the final assembly/CAD and build guide.
-- **Heater control:** controller-compatible hotend heater output and temperature sensor input; heated-bed output only if the final design includes a heated bed.
-- **Endstops / homing:** compatible endstop or sensor inputs for the final motion design.
-- **Cooling:** separately controlled hotend heatsink, part-cooling and electronics-enclosure fans as required.
-- **Power:** certified, enclosed, appropriately rated DC power supply; fuse and protection requirements to be determined from the final load calculation.
-- **Firmware:** choose Marlin or Klipper after selecting the controller board and host-computer arrangement.
-
-## 2. Preliminary electronics checklist
-
-| Item | Planning requirement | Status |
+| Subsystem | Source information | Confidence / action |
 |---|---|---|
-| Main controller board | 32-bit board; sufficient stepper, heater, fan and sensor connections | Not selected |
-| Stepper drivers | Compatible with controller and selected motors | Not selected |
-| X/Y/Z/extruder motors | Count, model and current rating to be verified from the build | Verify |
-| Hotend heater | Match the chosen hotend and controller output rating | Not selected |
-| Temperature sensors | Match hotend (and bed, if fitted) and firmware configuration | Not selected |
-| Endstop / homing sensors | Match the final mechanical layout | Not selected |
-| Fans | Correct voltage, size and current for each cooling position | Verify |
-| DC power supply | Certified enclosed supply; voltage and wattage based on a documented load calculation | Not selected |
-| Protection | Correctly rated fusing and suitable connectors/enclosure | To engineer |
-| Wiring and connectors | Wire gauge, insulation and connector ratings matched to measured loads | Not selected |
-| Host / display | Optional host for Klipper or compatible display for selected firmware | Not selected |
-| Emergency stop / power isolation | Appropriate accessible isolation and protective design | To review |
+| Main controller | The MY-CoreXY product page names **Makerbase MKS Monster8** and says the printer uses Klipper (Marlin is also mentioned). | Listed by the product page, but confirm exact board revision and MCU before purchase. |
+| Stepper drivers | The MY-CoreXY electronics BOM lists **5 drivers**, with **TMC2209 or similar** as an example. The controller-setup chapter also describes TMC2209 in UART mode. | Source-listed example; confirm driver count, exact driver version and board compatibility. |
+| Host computer | The component-mounting chapter shows a **Raspberry Pi** mounted as the Klipper host. | Source-listed; exact Pi model and storage are not specified in the BOM. |
+| DC power | The mounting chapter gives **Mean Well RS-25-5 (or similar)** for 5 V and **Mean Well LRS-200-24 (or similar)** for 24 V. | Source-listed examples, but the product page and accessories BOM describe different power arrangements. Do not order until the complete load and heater configuration are confirmed. |
+| Mains / bed power | The product page says **24 V system with a 240 V heated bed**. The wiring chapter describes an SSR for an AC heated bed. | Important unresolved design detail. Mains-side selection, installation and inspection require a qualified adult electrician. |
+| Hotend heater / sensor | The electronics BOM lists a **24 V, 40 W heater cartridge** and a **100 kΩ NTC hotend thermistor**. | Generic BOM specification; verify against the exact hotend and sensor model. |
+| Fans | The electronics BOM lists two cooling fans, examples **4010 or 5015**. | Quantity/type need checking against the actual EVA toolhead and enclosure. |
+| Endstops | The electronics BOM lists **3 endstop switches**. The mounting chapter describes X, Y and Z endstops. | Source-listed; confirm switch type and final homing design. |
+| Printed electronics parts | Controller box (1), controller-box lid (1), fan holder (2). | Listed in the electronics BOM. |
 
-## 3. Compatibility checks before ordering
+## 2. Conflicts that must be resolved before buying
 
-1. Confirm the exact motor count, motor model, rated current and connector type.
-2. Confirm whether the selected hotend and build configuration use 12 V or 24 V parts; do not mix voltages.
-3. Check the controller board's input-voltage range, driver compatibility, per-channel current limits, heater MOSFET ratings, fan outputs and thermistor support.
-4. Calculate the maximum DC load from the actual heater, motors, fans and controller specifications; select a certified supply with suitable headroom.
-5. Confirm the firmware supports the selected board and the intended CoreXY / Z-motion arrangement.
-6. Verify pin assignments and sensor types from the board manufacturer's documentation before any commissioning.
+1. **Controller-board mismatch:** the product page names MKS Monster8; the electronics BOM gives SKR Pro / Duet 3 as examples; the mounting chapter gives BigTreeTech Octopus as an example. These are not interchangeable without checking the actual wiring, pin map, firmware and mounting.
+2. **Power-system mismatch:** the product page describes a 24 V system and 240 V bed; the accessories BOM lists a 24 V 350 W supply; the wiring chapter describes an LRS-200-24 plus an AC-bed SSR and a separate 5 V supply. Confirm which revision of the machine and bed is represented by the CAD you are building.
+3. **Driver / motor count mismatch:** the electronics BOM lists five drivers, while the DC-wiring chapter describes four Z-motor connections as well as A/B and extruder motors. The Z-motion BOM lists one Z motor. The actual motor count must be checked against the exact model and assembly revision.
+4. **Board naming detail:** the product page's controller section names MKS Monster8 but a nearby feature heading refers to MKS DLC32. Confirm the actual product and board revision from the designer's current build files.
 
-## 4. Electrical safety
+## 3. Working electronics checklist
 
-- Use a certified, enclosed power supply and keep hazardous mains connections enclosed.
-- Mains-side installation and inspection must be done by a qualified adult/electrician. Do not work on live circuits.
-- Do not rely on firmware alone for thermal safety. Use appropriate hardware protection, correctly rated components, secure terminals and strain relief.
-- Keep wiring away from moving parts and hot surfaces; protect cables against abrasion.
-- Do not power heaters until the sensor type, firmware configuration, wiring and independent thermal protections have been checked.
-- This document is a planning checklist, not a substitute for the controller, power-supply and component manufacturers' instructions.
+| Item | Preliminary quantity / specification | Status |
+|---|---|---|
+| Mainboard | MKS Monster8 is the product-page reference | Verify revision, pinout and firmware target |
+| Stepper drivers | 5 listed; TMC2209 example | Verify count and exact model |
+| Raspberry Pi / Klipper host | 1 host shown in mounting guide | Confirm model and storage |
+| 5 V supply | RS-25-5 example | Verify load and approved supply |
+| 24 V supply | LRS-200-24 example | Verify total DC load; conflicting 350 W listing exists |
+| Hotend heater | 24 V, 40 W listed | Verify against chosen hotend |
+| Hotend thermistor | 100 kΩ NTC listed | Verify exact sensor curve/type |
+| Fans | 2 listed; 4010 / 5015 examples | Verify voltage, current, airflow and mounting |
+| Endstops | 3 listed | Verify type and axis arrangement |
+| Bed heater / SSR | AC bed and SSR mentioned in wiring guide | Do not select or install until bed design is confirmed by the designer and qualified electrician |
+| Wiring / connectors | By actual circuit requirements | Must be specified from datasheets and reviewed |
+| Protective devices / isolation | By qualified electrical design | Not yet selected |
+| Controller enclosure / lid / fan holders | 1 / 1 / 2 | Printed parts listed by source |
 
-## 5. Information still needed
+## 4. Firmware and compatibility
 
-The exact electronics BOM and wiring diagram cannot be finalized until the following are known:
+- Klipper is the primary firmware direction described by the product page; Marlin is also mentioned as supported.
+- The controller's exact MCU, bootloader, communication method and pin map must be confirmed before creating a firmware configuration.
+- Driver mode and jumper positions depend on the exact board revision. Do not copy jumper positions from another board.
+- The final configuration must match the real motor count, endstop locations, thermistor model, heater outputs and fan voltage.
 
-- Final stepper motor count and model numbers
-- Selected hotend and heater voltage / wattage
-- Whether a heated bed is included
-- Fan voltage, size and current
-- Preferred controller board and firmware
-- Country-specific supplier quotations, shipping and taxes
+## 5. Safety boundary
 
-**Next revision:** replace every "Not selected / Verify" entry with a confirmed part number, quantity, datasheet link, supplier quote and compatibility note.
+This repository is a student project. Mains-powered supplies, AC heated beds, grounding, fusing and isolation must be specified, installed and inspected by a qualified adult electrician. Do not open power-supply cases or work on live equipment. Keep all hazardous connections enclosed. Do not operate heaters until sensor compatibility, firmware limits and independent thermal protections have been professionally checked.
+
+This document intentionally does **not** provide a mains wiring procedure or a ready-to-use wiring diagram.
+
+## 6. Verification checklist before a purchase list can be finalized
+
+- [ ] Confirm the exact MY-CoreXY revision represented by the downloaded CAD/STLs.
+- [ ] Ask the designer which controller board is the intended one: MKS Monster8, Octopus, SKR Pro, or another.
+- [ ] Confirm the exact Z motor count from the original assembly and wiring diagram.
+- [ ] Confirm the heated-bed type and rated voltage from the actual bed label / official parts list.
+- [ ] Confirm the hotend model, heater cartridge and thermistor part numbers.
+- [ ] Confirm every fan's voltage, current, size and quantity.
+- [ ] Confirm the host computer and firmware version.
+- [ ] Have the power architecture and protection reviewed by a qualified electrician.
+- [ ] Add supplier links, India pricing, shipping and taxes only after the above checks.
+
+## Sources
+
+- MY-CoreXY product overview and controller reference: https://my-machines.com/my-corexy-3d-printer
+- MY-CoreXY electronics BOM: https://docs.my-machines.com/3d-printers/my-corexy/bom/electronics/
+- Component mounting (Pi, power-supply and controller examples): https://docs.my-machines.com/3d-printers/my-corexy/wiring/01-component-mounting/
+- Controller-board setup and TMC2209 example: https://docs.my-machines.com/3d-printers/my-corexy/wiring/02-controller-setup/
+- Mains and PSU wiring chapter (reference only; not a DIY wiring instruction): https://docs.my-machines.com/3d-printers/my-corexy/wiring/03-mains-wiring/
+- Low-voltage and signal wiring chapter: https://docs.my-machines.com/3d-printers/my-corexy/wiring/04-dc-wiring/
