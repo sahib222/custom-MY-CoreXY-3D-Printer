@@ -25,7 +25,7 @@ The original designer and source project are credited. This repository is for do
 | Path | Contents |
 |---|---|
 | `BOM/Materials-and-Cost.csv` | Preliminary category-level budget estimate |
-| `CAD/` | Planned location for assembly models and CAD exports |
+| `CAD/` | Planned location for CAD exports model |
 | `Images/` | Planned location for design screenshots and build photos |
 | `Electronics/` | Planned location for wiring diagrams and controller documentation |
 | `Documentation/` | Planned location for design notes, build log and test results |
