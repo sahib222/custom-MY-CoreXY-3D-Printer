@@ -86,3 +86,14 @@ I will add a new dated entry when I make real progress. I will not use an old im
 **What still needs checking:** The original MY-CoreXY files do not agree about the Z-motor arrangement. I need to confirm the number of independently controlled motors before I can say this board is compatible or buy it.
 
 **Status:** The board is the selected budget candidate, not a tested or confirmed final choice.
+
+
+### 7 November 2026 — Checking the Z-axis motor count
+
+**What I checked:** I reviewed the official MY-CoreXY Z-drive assembly guide.
+
+**What I found:** It describes four Z-drive assemblies, each with a motor. The selected SKR Mini E3 V3.0 has two Z driver channels, so I cannot assume it can independently control all four Z motors.
+
+**My decision:** Keep the board as a candidate only. I need confirmation of the original motor grouping and driver requirements before buying it.
+
+**Status:** Four physical Z-drive motors are confirmed from the assembly guide; the controller arrangement is still unverified.
