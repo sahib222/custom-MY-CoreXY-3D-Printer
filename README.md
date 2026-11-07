@@ -73,3 +73,11 @@ Mains-powered equipment, heaters and moving machinery can cause injury or fire i
 ## Build log
 
 Progress updates, CAD revisions, supplier quotations, assembly photographs and test results will be added here as the project develops.
+
+
+## Electronics planning
+
+- [Preliminary electronics plan](Electronics/ELECTRONICS-PLAN.md)
+- [Electronics BOM (unselected parts and quote tracker)](Electronics/ELECTRONICS-BOM.csv)
+
+The electronics documents are planning drafts. Exact board, drivers, motors, heaters, sensors, fans, power supply and protection must be confirmed against the final build before purchase or wiring.
