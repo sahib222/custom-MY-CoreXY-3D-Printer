@@ -1,0 +1,11 @@
+Category,Materials / Components,Quantity,Estimated Cost (USD),Estimated Cost (INR),Status / Notes,Supplier / Link
+Frame,"Aluminium extrusions, corner brackets and frame fasteners",1,90,7920,"Planning estimate; confirm extrusion lengths and profile",
+Motion system,"Linear rails, carriages and Z-motion hardware",1,100,8800,"Planning estimate; verify rail lengths and carriage type",
+Drive system,"Stepper motors, belts, pulleys and idlers",1,75,6600,"Planning estimate; verify motor size and belt/pulley specifications",
+Electronics,"Controller board, stepper drivers, wiring and connectors",1,85,7480,"Planning estimate; check firmware and motor compatibility",
+Toolhead,"Hotend, extruder and compatible toolhead components",1,55,4840,"Planning estimate; verify EVA/toolhead compatibility",
+Power,"Power supply, fuses, switches and wiring accessories",1,45,3960,"Planning estimate; verify ratings and use enclosed, properly rated components",
+Printed parts,"Filament for required printed printer components",1,25,2200,"Planning estimate; confirm material and print quantities",
+Shipping / contingency,"Shipping and price variation allowance",1,25,2200,"Allowance only; import duties and taxes may be extra",
+TOTAL ESTIMATE,,,"=SUM(D2:D9)","=SUM(E2:E9)","Preliminary estimate; not supplier quotations",
+IMPORTANT,,,,,"Estimates use an illustrative exchange rate of 1 USD = INR 88. Replace with verified quotes, exact quantities and current exchange rate before submitting to Hack Club."
