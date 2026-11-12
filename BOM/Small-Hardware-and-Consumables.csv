@@ -11,3 +11,8 @@ Cable ties,Small and medium nylon ties,TBD,Cable routing and strain relief,Keep 
 Cable clips / mounts,Printed or profile-compatible clips,TBD,Wire and cable-chain routing,Confirm locations after motion-system layout
 Cable sleeve,Expandable braided sleeve or suitable loom,TBD,Protect and bundle low-voltage wiring,Keep away from hot and moving parts
 Adhesive labels,Heat-resistant wire labels or markers,TBD,Identify wiring during assembly,Use clear voltage/polarity labels
+Flanged bearings,F695 type,TBD,A/B drive and idler bearing stacks,Assembly references identify F695 bearings; exact count must be checked against the selected CAD revision
+Precision shims,M5-compatible; thickness TBD,TBD,A/B drive bearing spacing,Confirm shim thickness and count from CAD/exploded view
+Socket-head screws,M3 x 30 mm,TBD,A/B drive assembly fastening,Confirm quantity and head type from exact CAD revision
+Socket-head screws,M3 x 40 mm,TBD,A/B idler assembly fastening,Confirm quantity and head type from exact CAD revision
+Flat washers,M3 compatible,TBD,A/B idler assembly fastening,Confirm outside diameter and count from exact CAD revision
