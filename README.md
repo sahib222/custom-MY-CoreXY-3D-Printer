@@ -30,13 +30,14 @@ The original designer and source project are credited. This repository is for do
 
 | Path | Contents |
 |---|---|
-| `BOM.csv` | Preliminary category-level budget estimate |
+| `BOM.csv` | Master checklist and provisional, unverified budget estimate |
+| `Documentation/AUDIT-REPORT.md` | Full source, quantity, cost and evidence audit |
 | `CAD/` | CAD models and exports |
 | `Images/` | Planned location for design screenshots and build photos |
 | `Electronics/` | Planned location for wiring diagrams and controller documentation |
 | `Documentation/` | Planned location for design notes, build log and test results |
 
-Some folders may be added as the project progresses. Only files that have actually been uploaded are available in this repository.
+The CAD folder currently contains `MY-CoreXY.zip` and `MY-CoreXY-Full-Assembly.zip`; it does not contain a verified STEP assembly. Only files that have actually been uploaded are available in this repository.
 
 ## Images
 
@@ -110,11 +111,11 @@ A possible future feature is a small monitoring system using a microcontroller a
 
 ## Bill of materials (USD planning estimate)
 
-The itemised master BOM is [BOM.csv](BOM.csv) in the repository root. It includes estimated prices in USD, supplier search links, small hardware (screws, nuts, T-nuts, washers, inserts and cable-management items), a separate shipping allowance, and a total including shipping. **These are budget estimates, not live quotations or confirmed compatible selections.** Several source-design details remain unresolved (especially Z-motor driver grouping, controller revision, power-supply sizing and heated-bed arrangement). Check specifications, current seller prices, GST and delivery before ordering. Mains-powered parts and wiring must be reviewed by a qualified adult electrician.
+The master checklist is [BOM.csv](BOM.csv) in the repository root. It includes itemised source quantities where available, unpriced checklist rows, preliminary USD estimates and India supplier search links. **It is not purchase-ready.** The official source documents conflict on the frame profile (2020 vs 3030), rail size (MGN9 vs MGN12), Z-motor count/grouping and heated-bed voltage. The product documentation is marked work-in-progress. Read [the full audit report](Documentation/AUDIT-REPORT.md) before making decisions. Mains-powered parts and wiring must be reviewed by a qualified adult electrician.
 
 ## Funding and budget
 
-The current preliminary total is approximately **$781.06 USD**, including the planned camera and touchscreen additions. The BOM uses a reference conversion of **1 USD = 93.68 INR (12 November 2026)**. This is a planning estimate, not a supplier quote. Prices, exchange rates, quantities, compatibility, shipping, customs and taxes must be verified before submitting a final funding request or placing orders.
+The current arithmetic sum of priced rows is **$761.84 USD** (approximately **₹71,369** at the reference conversion of **1 USD = ₹93.68 on 12 November 2026**). This is **not a verified project budget**: some broad category allowances may overlap with individually priced components, and many required checklist rows are still unpriced. The Electronics BOM is a subsystem view of items already represented in the master BOM; do not add its subtotal again. See [the full audit report](Documentation/AUDIT-REPORT.md). Do not submit this arithmetic sum as a final funding request until the exact design revision, quantities and supplier quotations are confirmed.
 
 Funding would be used only for project materials that are not already available to me. No purchases should be made on the assumption that funding is approved until the programme confirms approval.
 
