@@ -68,7 +68,7 @@ Accessory detail,24 V LED strip,1,,,,Optional source accessory; confirm length/c
 Accessory detail,0.4 mm nozzle,1,,,,Source accessory BOM; verify hotend thread/type
 Accessory detail,0.6 mm nozzle,1,,,,Optional nozzle; verify hotend thread/type
 Accessory detail,0.8 mm nozzle,1,,,,Optional nozzle; verify hotend thread/type
-Electronics detail,Filament runout sensor,1,,,,Optional/add-on feature; quantity 1 is a planning assumption, not in the cited base Electronics BOM
+Electronics detail,Filament runout sensor,1,,,,"Optional/add-on feature; quantity 1 is a planning assumption, not in the cited base Electronics BOM"
 Electronics detail,Printer display / touchscreen mounting hardware,1,,,,Display itself is budgeted separately; mount and cable not yet verified
 Tools / consumables,Lubricant suitable for linear rails and bearings,1,,,,Consumable; select per rail/bearing manufacturer instructions
 Tools / consumables,Thread-locking compound where specified,1,,,,Use only where the design/screw manufacturer calls for it
