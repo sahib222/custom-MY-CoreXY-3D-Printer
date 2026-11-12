@@ -22,4 +22,11 @@ Monitoring,USB camera for remote print monitoring,1,12.81,12.81,https://www.amaz
 User interface,Compatible touchscreen display,1,26.69,26.69,https://www.amazon.in/s?k=Klipper+touchscreen+display+3D+printer,"Planning allowance; confirm display size, interface and host compatibility"
 Software,AI-assisted print-failure monitoring software,1,0.00,0.00,,Software allowance is $0 using compatible open-source tools; camera/host hardware is budgeted separately; not a safety system
 Shipping,Shipping / delivery allowance,1,19.21,19.21,https://www.amazon.in/,"Estimated India delivery allowance; actual seller, location, package weight and taxes may change this"
+Electronics detail,IEC C14 inlet with fuse holder,1,,,,Source accessory BOM; mains-side selection and installation by qualified adult electrician
+Electronics detail,Main rocker switch,1,,,,Source accessory BOM; mains-rated selection by qualified adult electrician
+Electronics detail,24 V to 5 V DC-DC buck converter,1,,,,Source accessory BOM; verify load and board/host power requirements
+Electronics detail,24 V LED strip,1,,,,Optional source accessory; verify current and enclosure suitability
+Electronics detail,Filament runout sensor,1,,,,Confirm requirement and controller input compatibility for selected revision
+Electronics detail,Printer display mount and interface cable,1,,,,Touchscreen itself is budgeted separately; mount/interface not yet verified
+Electronics detail,"Cable ferrules, terminals and labels",1,,,,Exact types/sizes must be specified by qualified reviewer
 TOTAL,Electronics total including shipping and added smart hardware,1,,406.81,,"Planning estimate only; exchange rate 1 USD = 93.68 INR on 12 Nov 2026. Validate live prices, taxes, shipping and compatibility."
