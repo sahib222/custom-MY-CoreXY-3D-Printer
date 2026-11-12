@@ -1,24 +1,10 @@
-# Materials and Cost — superseded planning sheet
-
-**Status: superseded. Do not use the old $500 / ₹44,000 estimate or the old ₹88 exchange-rate assumption.**
-
-The current master checklist and provisional arithmetic total are maintained in [../BOM.csv](../BOM.csv). The complete audit is in [../Documentation/AUDIT-REPORT.md](../Documentation/AUDIT-REPORT.md).
-
-The current arithmetic sum of priced rows in the master BOM is $761.84 USD (approximately ₹71,369 using 1 USD = ₹93.68 on 12 November 2026). This is not a verified purchase budget: category allowances may overlap with individual items, required items remain unpriced, and the official source documents contain unresolved design-revision conflicts.
-
-Do not add this sheet or [../Electronics/ELECTRONICS-BOM.csv](../Electronics/ELECTRONICS-BOM.csv) to the master total. The electronics sheet is a subsystem breakdown of items already represented in the master BOM.
-
-## Material candidates (not final specifications)
-
-| Subsystem | Candidate | Verification required |
-|---|---|---|
-| Frame | Aluminium extrusion | Resolve 2020 vs 3030 profile and cut lengths |
-| Motion | Linear rails, belts, pulleys and bearings | Resolve MGN9 vs MGN12 and exact CAD revision |
-| Printed components | PETG / ASA / ABS as permitted by each part | Check temperatures, loads and print settings from source |
-| Enclosure | Acrylic or specified panel material | Confirm original panel dimensions and temperature suitability |
-| Electrical insulation | Rated cable, terminals and insulation | Final selection and installation by qualified adult electrician |
-| Consumables | Lubricant, inserts, labels and cable-management parts | Match manufacturer requirements and actual assembly |
-
-## Pricing method
-
-For each final part, record the exact specification, quantity, supplier SKU, dated unit price, shipping, GST/import costs and compatibility evidence. Replace category allowances with real line-item quotations and remove duplicated allowances before calculating a funding request.
+Category,Materials / Components,Quantity,Estimated Cost (USD),Estimated Cost (INR),Status / Notes,Supplier / Link
+Status,Obsolete preliminary estimate,,,,Superseded by the master BOM and Documentation/AUDIT-REPORT.md; do not use the former 500 USD total or INR 88 exchange rate,
+Reference,Master BOM,,,,Use ../BOM.csv; current arithmetic sum of priced rows is 761.84 USD but is not a verified purchase budget,
+Reference,Electronics BOM,,,,Subsystem breakdown only; do not add its subtotal to the master BOM,
+Material,Aluminium extrusion,,,,Resolve 2020 versus 3030 profile and exact cut lengths,
+Material,Linear rails and carriages,,,,Resolve MGN9 versus MGN12 and exact CAD revision,
+Material,Printed components,,,,Confirm PETG ASA or ABS suitability per part and operating temperature,
+Material,Enclosure panels,,,,Confirm panel material dimensions and temperature rating,
+Material,Electrical cable and insulation,,,,Final selection and installation require qualified adult electrician,
+Consumable,Lubricant inserts labels and cable management,,,,Confirm exact specifications from final assembly,
