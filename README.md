@@ -64,6 +64,14 @@ The following are material candidates for planning, not a final manufacturing sp
 
 The BOM includes allowances for filament and small hardware such as M3/M4/M5 screws, nuts, extrusion T-nuts, washers, heat-set inserts, cable ties and clips. Exact quantities and sizes remain to be checked against the final assembly.
 
+## Remaining-parts audit
+
+The master BOM has been expanded with a source-design checklist covering the frame extrusion cut lengths and corner brackets; gantry rails, carriages, belts, pulleys and idlers; Z-motion screw, coupler, rods and bearings; extruder motor, hotend, drive gears, PTFE tube and fittings; bed surface, springs and levelling wheels; enclosure panels, hinges, handle and catches; and accessory items such as the inlet, switch, DC-DC converter, LED strip and nozzles. The electronics BOM also lists the additional electrical/accessory items that still need confirmation.
+
+**Important budget note:** these newly itemised rows have blank prices and are explicitly marked as checklist items pending CAD/revision verification. They are not additional quoted costs and are not included in the current $781.06 estimate. Some are covered by existing broad category allowances, so do not add them to the total a second time until supplier quotations replace the allowances. Optional parts (for example extra nozzles, LED strip, runout sensor and heated-bed alternatives) must be confirmed against the exact machine revision before being treated as required.
+
+The original documentation contains unresolved differences in Z-drive count, bed/power arrangement and accessory configuration. This is a more complete audit checklist, **not yet a purchase-ready or fully priced BOM**.
+
 ## Main subsystems
 
 1. **Frame:** aluminium extrusion structure and fasteners.
