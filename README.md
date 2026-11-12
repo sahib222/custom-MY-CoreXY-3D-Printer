@@ -30,7 +30,7 @@ The original designer and source project are credited. This repository is for do
 
 | Path | Contents |
 |---|---|
-| `BOM/Materials-and-Cost.csv` | Preliminary category-level budget estimate |
+| `BOM.csv` | Preliminary category-level budget estimate |
 | `CAD/` | CAD models and exports |
 | `Images/` | Planned location for design screenshots and build photos |
 | `Electronics/` | Planned location for wiring diagrams and controller documentation |
@@ -71,19 +71,26 @@ Exact specifications and quantities will be recorded in the BOM after checking t
 - [ ] Run initial motion, calibration and print tests.
 - [ ] Document results, problems and improvements.
 - [ ] Evaluate the optional CoreXY Guardian monitoring add-on.
+- [ ] Integrate a compatible camera for remote print monitoring.
+- [ ] Add a compatible touchscreen for local control.
+- [ ] Evaluate AI-assisted print-failure detection; treat it as an advisory feature, not a safety system.
+
+## Smart monitoring and user interface — planned features
+
+The planned upgrade set includes a compatible camera for remote viewing, a touchscreen for local status and control, and optional AI-assisted analysis of camera images to flag possible print failures. These features are not yet implemented or validated. AI alerts are advisory only and must never replace supervision, thermal protections or other hardware safety systems.
 
 ## CoreXY Guardian — future extension
 
 A possible future feature is a small monitoring system using a microcontroller and vibration sensor to record machine vibration and help identify changes that may indicate maintenance is needed. This is a planned experiment, not a completed or validated safety system.
 
 
-## Bill of materials (India planning estimate)
+## Bill of materials (USD planning estimate)
 
-The itemised master BOM is [BOM.csv](BOM.csv) in the repository root. It includes an estimated price and an India-accessible supplier search link for each listed line, a separate shipping allowance, and a total including shipping. **These are budget estimates, not live quotations or confirmed compatible selections.** Several source-design details remain unresolved (especially Z-motor driver grouping, controller revision, power-supply sizing and heated-bed arrangement). Check specifications, current seller prices, GST and delivery before ordering. Mains-powered parts and wiring must be reviewed by a qualified adult electrician.
+The itemised master BOM is [BOM.csv](BOM.csv) in the repository root. It includes estimated prices in USD, supplier search links, small hardware (screws, nuts, T-nuts, washers, inserts and cable-management items), a separate shipping allowance, and a total including shipping. **These are budget estimates, not live quotations or confirmed compatible selections.** Several source-design details remain unresolved (especially Z-motor driver grouping, controller revision, power-supply sizing and heated-bed arrangement). Check specifications, current seller prices, GST and delivery before ordering. Mains-powered parts and wiring must be reviewed by a qualified adult electrician.
 
 ## Funding and budget
 
-The preliminary estimate is recorded in `BOM/Materials-and-Cost.csv`. It is a planning estimate, not a supplier quote. The listed costs, exchange rate, quantities, compatibility, shipping, customs and taxes must be verified before submitting a final funding request or placing orders.
+The current preliminary total is approximately **$781.06 USD**, including the planned camera and touchscreen additions. The BOM uses a reference conversion of **1 USD = 93.68 INR (12 November 2026)**. This is a planning estimate, not a supplier quote. Prices, exchange rates, quantities, compatibility, shipping, customs and taxes must be verified before submitting a final funding request or placing orders.
 
 Funding would be used only for project materials that are not already available to me. No purchases should be made on the assumption that funding is approved until the programme confirms approval.
 
