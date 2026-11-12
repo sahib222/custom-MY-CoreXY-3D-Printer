@@ -37,29 +37,29 @@ Frame detail,2020 aluminium extrusion 300 mm,4,,,,Breakdown of frame allowance; 
 Frame detail,2020 aluminium extrusion 350 mm,4,,,,Breakdown of frame allowance; verify source CAD cut list
 Frame detail,2020 aluminium extrusion 400 mm,4,,,,Breakdown of frame allowance; verify source CAD cut list
 Frame detail,Frame corner brackets,12,,,,Breakdown of frame allowance; verify profile and bracket type
-Gantry detail,MGN9 300 mm linear rails,2,,,,Source gantry BOM; verify against downloaded CAD revision
-Gantry detail,MGN9H rail carriages,2,,,,Source gantry BOM; verify against downloaded CAD revision
-Gantry detail,"GT2 timing belt, 6 mm",1,,,,Source specifies 5 m; verify exact routing length
-Gantry detail,GT2 20-tooth pulleys,2,,,,Source gantry BOM; verify shaft bore
-Gantry detail,Idler pulleys,2,,,,Source gantry BOM; verify smooth/toothed type
-Z-motion detail,"T8 lead screw, 300 mm",1,,,,Source BOM quantity; reconcile with four Z-drive assemblies
-Z-motion detail,T8 anti-backlash nut,1,,,,Source BOM quantity; verify actual design revision
-Z-motion detail,"Flexible shaft coupler, 5-to-8 mm",1,,,,Source BOM; verify motor shaft and screw dimensions
-Z-motion detail,"8 mm hardened linear rods, 350 mm",2,,,,Source BOM; verify count against four-drive arrangement
-Z-motion detail,LM8UU linear bearings,4,,,,Source BOM; verify quantity and fit
-Extruder detail,Pancake NEMA17 extruder motor,1,,,,Source extruder BOM; verify exact motor dimensions/current
-Extruder detail,Compatible hotend assembly,1,,,,Select only after confirming toolhead CAD and thermal specs
-Extruder detail,Dual-drive extruder gear kit,1,,,,Source suggests Bondtech-style; verify exact extruder
+Gantry detail,MGN9 300 mm linear rails,2,,,,Official gantry BOM: 2 rails; confirm this revision matches the downloaded CAD
+Gantry detail,MGN9H rail carriages,2,,,,Official gantry BOM: 2 carriages; confirm this revision matches the downloaded CAD
+Gantry detail,"GT2 timing belt, 6 mm",5,,,,Official gantry BOM specifies 5 metres total; quantity is metres, not individual rolls
+Gantry detail,GT2 20-tooth pulleys,2,,,,Official gantry BOM: 2; verify shaft bore
+Gantry detail,Idler pulleys,2,,,,Official gantry BOM: 2; verify smooth/toothed type
+Z-motion detail,"T8 lead screw, 300 mm",1,,,,Z-Motion BOM lists 1; conflicts with other Z-drive/belt-drive descriptions; do not purchase until revision is confirmed
+Z-motion detail,T8 anti-backlash nut,1,,,,Z-Motion BOM lists 1; confirm this part exists in the exact CAD revision
+Z-motion detail,"Flexible shaft coupler, 5-to-8 mm",1,,,,Z-Motion BOM lists 1; verify actual shaft/screw interface before purchase
+Z-motion detail,"8 mm hardened linear rods, 350 mm",2,,,,Z-Motion BOM lists 2; check against downloaded CAD
+Z-motion detail,LM8UU linear bearings,4,,,,Z-Motion BOM lists 4; check against downloaded CAD
+Extruder detail,Pancake NEMA17 extruder motor,1,,,,Extruder BOM: 1; verify exact motor dimensions/current
+Extruder detail,Compatible hotend assembly,1,,,,Extruder BOM: 1; exact hotend model remains to be selected
+Extruder detail,Dual-drive extruder gear kit,1,,,,Extruder BOM: 1; confirm exact EVA extruder compatibility
 Extruder detail,PTFE guide tube,1,,,,"Confirm length, inner/outer diameter and hotend compatibility"
-Extruder detail,Pneumatic tube fittings,2,,,,Verify thread and tube dimensions
-Bed detail,220 x 220 mm heated bed,1,,,,Conditional: source BOM; bed voltage/type conflict unresolved
-Bed detail,220 x 220 mm glass or PEI build surface,1,,,,Choose one compatible surface; dimensions require CAD check
-Bed detail,Bed springs,4,,,,Source heat-bed BOM; verify bed mounting design
-Bed detail,Bed levelling thumbwheels,4,,,,Source heat-bed BOM; verify screw/thread size
-Enclosure detail,3 mm acrylic enclosure panels,4,,,,Source enclosure BOM; verify panel cut dimensions and heat suitability
-Enclosure detail,Door hinges,2,,,,Source enclosure BOM; verify mounting geometry
-Enclosure detail,Door handle,1,,,,Source enclosure BOM
-Enclosure detail,Magnetic door catches,2,,,,Source enclosure BOM
+Extruder detail,Pneumatic tube fittings,2,,,,Extruder BOM: 2; verify thread and tube dimensions
+Bed detail,220 x 220 mm heated bed,1,,,,Heat Bed BOM: 1 x 24V PCB bed; other documentation mentions a different bed type, verify revision
+Bed detail,220 x 220 mm glass or PEI build surface,1,,,,Heat Bed BOM: 1 surface; choose glass or PEI, not both
+Bed detail,Bed springs,4,,,,Heat Bed BOM: 4
+Bed detail,Bed levelling thumbwheels,4,,,,Heat Bed BOM: 4; verify thread size
+Enclosure detail,3 mm acrylic enclosure panels,4,,,,Enclosure BOM: 4 panels; confirm dimensions and temperature suitability
+Enclosure detail,Door hinges,2,,,,Enclosure BOM: 2
+Enclosure detail,Door handle,1,,,,Enclosure BOM: 1
+Enclosure detail,Magnetic door catches,2,,,,Enclosure BOM: 2
 Accessory detail,IEC C14 inlet with fuse holder,1,,,,Source accessory BOM; mains-side selection/installation by qualified adult electrician
 Accessory detail,Main rocker switch,1,,,,Source accessory BOM; mains-rated component selection by qualified adult electrician
 Accessory detail,24 V DC 350 W power supply,1,,,,Source accessory BOM example conflicts with current allowance; load calculation and adult electrician review required
@@ -68,9 +68,17 @@ Accessory detail,24 V LED strip,1,,,,Optional source accessory; confirm length/c
 Accessory detail,0.4 mm nozzle,1,,,,Source accessory BOM; verify hotend thread/type
 Accessory detail,0.6 mm nozzle,1,,,,Optional nozzle; verify hotend thread/type
 Accessory detail,0.8 mm nozzle,1,,,,Optional nozzle; verify hotend thread/type
-Electronics detail,Filament runout sensor,1,,,,Confirm whether this is required by selected machine revision; not yet priced
+Electronics detail,Filament runout sensor,1,,,,Optional/add-on feature; quantity 1 is a planning assumption, not in the cited base Electronics BOM
 Electronics detail,Printer display / touchscreen mounting hardware,1,,,,Display itself is budgeted separately; mount and cable not yet verified
 Tools / consumables,Lubricant suitable for linear rails and bearings,1,,,,Consumable; select per rail/bearing manufacturer instructions
 Tools / consumables,Thread-locking compound where specified,1,,,,Use only where the design/screw manufacturer calls for it
 Tools / consumables,Spare ferrules / terminals / cable labels,1,,,,Electrical consumables; exact types/sizes set by qualified reviewer
 TOTAL,Total including shipping,1,,781.06,,"Indicative planning estimate only. Currency conversion uses 1 USD = 93.68 INR on 12 Nov 2026; verify live India prices, availability, quantities, GST, shipping and compatibility before purchase."
+Fasteners detail,M3x8 socket-head screws,100,,,,Fasteners BOM: 100
+Fasteners detail,M3x12 socket-head screws,50,,,,Fasteners BOM: 50
+Fasteners detail,M3x20 socket-head screws,20,,,,Fasteners BOM: 20
+Fasteners detail,M3 hex nuts,100,,,,Fasteners BOM: 100
+Fasteners detail,M3 extrusion T-nuts,50,,,,Fasteners BOM: 50; confirm slot/profile compatibility
+Fasteners detail,M5x10 socket-head screws,50,,,,Fasteners BOM: 50
+Fasteners detail,M5 hex nuts,50,,,,Fasteners BOM: 50
+Fasteners detail,M5 extrusion T-nuts,50,,,,Fasteners BOM: 50; confirm slot/profile compatibility
