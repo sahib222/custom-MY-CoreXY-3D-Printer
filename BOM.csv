@@ -33,4 +33,44 @@ Monitoring,USB camera for remote print monitoring,1,12.81,12.81,https://www.amaz
 User interface,Compatible touchscreen display,1,26.69,26.69,https://www.amazon.in/s?k=Klipper+touchscreen+display+3D+printer,"Planning allowance; confirm display size, interface and host compatibility"
 Software,AI-assisted print-failure monitoring software,1,0.00,0.00,,Software allowance is $0 using compatible open-source tools; camera/host hardware is budgeted separately; detection is not a safety system
 Shipping,Shipping / delivery allowance,1,19.21,19.21,https://www.amazon.in/,Estimated India delivery allowance; actual shipping varies by seller and destination
+Frame detail,2020 aluminium extrusion 300 mm,4,,,,Breakdown of frame allowance; verify source CAD cut list
+Frame detail,2020 aluminium extrusion 350 mm,4,,,,Breakdown of frame allowance; verify source CAD cut list
+Frame detail,2020 aluminium extrusion 400 mm,4,,,,Breakdown of frame allowance; verify source CAD cut list
+Frame detail,Frame corner brackets,12,,,,Breakdown of frame allowance; verify profile and bracket type
+Gantry detail,MGN9 300 mm linear rails,2,,,,Source gantry BOM; verify against downloaded CAD revision
+Gantry detail,MGN9H rail carriages,2,,,,Source gantry BOM; verify against downloaded CAD revision
+Gantry detail,"GT2 timing belt, 6 mm",1,,,,Source specifies 5 m; verify exact routing length
+Gantry detail,GT2 20-tooth pulleys,2,,,,Source gantry BOM; verify shaft bore
+Gantry detail,Idler pulleys,2,,,,Source gantry BOM; verify smooth/toothed type
+Z-motion detail,"T8 lead screw, 300 mm",1,,,,Source BOM quantity; reconcile with four Z-drive assemblies
+Z-motion detail,T8 anti-backlash nut,1,,,,Source BOM quantity; verify actual design revision
+Z-motion detail,"Flexible shaft coupler, 5-to-8 mm",1,,,,Source BOM; verify motor shaft and screw dimensions
+Z-motion detail,"8 mm hardened linear rods, 350 mm",2,,,,Source BOM; verify count against four-drive arrangement
+Z-motion detail,LM8UU linear bearings,4,,,,Source BOM; verify quantity and fit
+Extruder detail,Pancake NEMA17 extruder motor,1,,,,Source extruder BOM; verify exact motor dimensions/current
+Extruder detail,Compatible hotend assembly,1,,,,Select only after confirming toolhead CAD and thermal specs
+Extruder detail,Dual-drive extruder gear kit,1,,,,Source suggests Bondtech-style; verify exact extruder
+Extruder detail,PTFE guide tube,1,,,,"Confirm length, inner/outer diameter and hotend compatibility"
+Extruder detail,Pneumatic tube fittings,2,,,,Verify thread and tube dimensions
+Bed detail,220 x 220 mm heated bed,1,,,,Conditional: source BOM; bed voltage/type conflict unresolved
+Bed detail,220 x 220 mm glass or PEI build surface,1,,,,Choose one compatible surface; dimensions require CAD check
+Bed detail,Bed springs,4,,,,Source heat-bed BOM; verify bed mounting design
+Bed detail,Bed levelling thumbwheels,4,,,,Source heat-bed BOM; verify screw/thread size
+Enclosure detail,3 mm acrylic enclosure panels,4,,,,Source enclosure BOM; verify panel cut dimensions and heat suitability
+Enclosure detail,Door hinges,2,,,,Source enclosure BOM; verify mounting geometry
+Enclosure detail,Door handle,1,,,,Source enclosure BOM
+Enclosure detail,Magnetic door catches,2,,,,Source enclosure BOM
+Accessory detail,IEC C14 inlet with fuse holder,1,,,,Source accessory BOM; mains-side selection/installation by qualified adult electrician
+Accessory detail,Main rocker switch,1,,,,Source accessory BOM; mains-rated component selection by qualified adult electrician
+Accessory detail,24 V DC 350 W power supply,1,,,,Source accessory BOM example conflicts with current allowance; load calculation and adult electrician review required
+Accessory detail,24 V to 5 V DC-DC buck converter,1,,,,Source accessory BOM; size only after 5 V load is known
+Accessory detail,24 V LED strip,1,,,,Optional source accessory; confirm length/current and enclosure suitability
+Accessory detail,0.4 mm nozzle,1,,,,Source accessory BOM; verify hotend thread/type
+Accessory detail,0.6 mm nozzle,1,,,,Optional nozzle; verify hotend thread/type
+Accessory detail,0.8 mm nozzle,1,,,,Optional nozzle; verify hotend thread/type
+Electronics detail,Filament runout sensor,1,,,,Confirm whether this is required by selected machine revision; not yet priced
+Electronics detail,Printer display / touchscreen mounting hardware,1,,,,Display itself is budgeted separately; mount and cable not yet verified
+Tools / consumables,Lubricant suitable for linear rails and bearings,1,,,,Consumable; select per rail/bearing manufacturer instructions
+Tools / consumables,Thread-locking compound where specified,1,,,,Use only where the design/screw manufacturer calls for it
+Tools / consumables,Spare ferrules / terminals / cable labels,1,,,,Electrical consumables; exact types/sizes set by qualified reviewer
 TOTAL,Total including shipping,1,,781.06,,"Indicative planning estimate only. Currency conversion uses 1 USD = 93.68 INR on 12 Nov 2026; verify live India prices, availability, quantities, GST, shipping and compatibility before purchase."
