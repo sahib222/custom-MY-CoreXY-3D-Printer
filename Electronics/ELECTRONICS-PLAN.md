@@ -46,7 +46,15 @@ The official assembly guide confirms **four Z-drive assemblies, each housing a m
 | Wiring / connectors | To be specified from final component datasheets | Not finalised |
 | Enclosure / lid / fan holders | Printed parts listed in source BOM | Check dimensions and fit |
 
-## 4. Firmware planning
+## 4. Planned smart features
+
+| Feature | Planned implementation | Status / caveat |
+|---|---|---|
+| Camera monitoring | Compatible USB camera connected to the Klipper host for remote viewing | Not selected or tested; verify host support and mounting |
+| Touchscreen | Compatible display for local printer status and controls | Not selected or tested; verify interface and software support |
+| AI print monitoring | Optional software analysis of camera images to flag possible print failures | Experimental; advisory only, not a safety system and not a substitute for supervision or hardware protections |
+
+## 5. Firmware planning
 
 - Klipper is the planned firmware.
 - BIGTREETECH publishes a Klipper guide and sample configuration for this board.
@@ -54,20 +62,20 @@ The official assembly guide confirms **four Z-drive assemblies, each housing a m
 - The final configuration must be created for the actual CoreXY kinematics, motor directions, step distances, endstops, thermistor, heater, fans and motor arrangement.
 - Do not copy printer dimensions or motion limits from the generic example.
 
-## 5. Source-design conflicts still open
+## 6. Source-design conflicts still open
 
 1. **Controller:** the original product page and wiring chapters refer to other controller examples. This project has selected SKR Mini E3 V3.0 as a replacement candidate; its pin mapping must be adapted and verified for this printer.
 2. **Motor / driver count:** the official assembly guide confirms four Z-drive motors, while the electronics BOM lists five drivers. Confirm how the four Z motors are assigned to the two Z driver channels before selecting the controller.
 3. **Power:** the source mentions a 24 V system, a 240 V heated bed, a separate 5 V supply and different 24 V supply examples. Confirm the exact bed and complete load before choosing supplies.
 4. **Toolhead and sensors:** verify the exact heater, thermistor, fans and endstop types against the selected hardware.
 
-## 6. Safety boundary
+## 7. Safety boundary
 
 This is a student project. Mains-powered equipment, AC heated beds, grounding, fusing, isolation and electrical installation must be specified, installed and inspected by a qualified adult electrician. Do not open power-supply cases or work on live equipment. Do not operate heaters until sensor compatibility, firmware limits and independent thermal protections have been professionally checked.
 
 This document does **not** provide a mains wiring procedure or a ready-to-use wiring diagram.
 
-## 7. Verification checklist
+## 8. Verification checklist
 
 - [ ] Confirm the exact MY-CoreXY revision represented by the downloaded CAD/STLs.
 - [x] Confirm four physical Z-drive motor assemblies in the official assembly guide.
