@@ -10,6 +10,7 @@ Build and document a functional MY-CoreXY CoreXY 3D printer as a student hardwar
 - 3D reference assembly and source part files have been collected.
 - Preliminary material categories and budget estimate have been added to the repository.
 - Exact component specifications, supplier quotes and mechanical fit still need verification.
+- A full repository/source audit is recorded in [AUDIT-REPORT.md](AUDIT-REPORT.md); key design conflicts block purchasing.
 - No claim is made that the printer is already assembled or operational.
 
 ## 3. Work packages
@@ -40,7 +41,7 @@ For every item, record:
 - Check smooth movement and alignment before powering motors.
 
 ### E. Electronics and commissioning
-- Use the BIGTREETECH SKR Mini E3 V3.0 as the planned controller candidate; verify its five onboard driver interfaces against the four physical Z-drive motors and the intended motor grouping before purchase. Finalise motors, power supply and wiring only after compatibility checks.
+- Keep the BIGTREETECH SKR Mini E3 V3.0 as an unverified candidate only. The official sources conflict on Z-motor count/grouping and controller choice. Resolve the exact revision and motor-driver mapping before selecting a board.
 - Verify electrical ratings, grounding, fusing and enclosure before connecting power.
 - Configure firmware and test motion in a controlled, supervised manner.
 - Calibrate and perform documented test prints.
@@ -50,7 +51,7 @@ After the printer works reliably, investigate vibration sensing and a dashboard 
 
 ## 4. Budget approach
 
-The current CSV is an early category-level estimate only. Replace it with itemised, dated supplier quotations. Confirm shipping, taxes and customs separately. Request only the amount justified by the final verified BOM and the funding programme's rules.
+The current master BOM arithmetic total is unverified and may contain overlapping category allowances. The Electronics BOM is a subsystem breakdown and must not be added to it. Replace estimates with itemised, dated supplier quotations after the design revision is confirmed. See [AUDIT-REPORT.md](AUDIT-REPORT.md). Confirm shipping, taxes and customs separately.
 
 ## 5. Evidence to collect
 
