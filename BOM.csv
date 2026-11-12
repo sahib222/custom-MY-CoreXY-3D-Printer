@@ -39,7 +39,7 @@ Frame detail,2020 aluminium extrusion 400 mm,4,,,,Breakdown of frame allowance; 
 Frame detail,Frame corner brackets,12,,,,Breakdown of frame allowance; verify profile and bracket type
 Gantry detail,MGN9 300 mm linear rails,2,,,,Official gantry BOM: 2 rails; confirm this revision matches the downloaded CAD
 Gantry detail,MGN9H rail carriages,2,,,,Official gantry BOM: 2 carriages; confirm this revision matches the downloaded CAD
-Gantry detail,"GT2 timing belt, 6 mm",5,,,,Official gantry BOM specifies 5 metres total; quantity is metres, not individual rolls
+Gantry detail,"GT2 timing belt, 6 mm",5,,,,"Official gantry BOM specifies 5 metres total; quantity is metres, not individual rolls"
 Gantry detail,GT2 20-tooth pulleys,2,,,,Official gantry BOM: 2; verify shaft bore
 Gantry detail,Idler pulleys,2,,,,Official gantry BOM: 2; verify smooth/toothed type
 Z-motion detail,"T8 lead screw, 300 mm",1,,,,Z-Motion BOM lists 1; conflicts with other Z-drive/belt-drive descriptions; do not purchase until revision is confirmed
@@ -52,8 +52,8 @@ Extruder detail,Compatible hotend assembly,1,,,,Extruder BOM: 1; exact hotend mo
 Extruder detail,Dual-drive extruder gear kit,1,,,,Extruder BOM: 1; confirm exact EVA extruder compatibility
 Extruder detail,PTFE guide tube,1,,,,"Confirm length, inner/outer diameter and hotend compatibility"
 Extruder detail,Pneumatic tube fittings,2,,,,Extruder BOM: 2; verify thread and tube dimensions
-Bed detail,220 x 220 mm heated bed,1,,,,Heat Bed BOM: 1 x 24V PCB bed; other documentation mentions a different bed type, verify revision
-Bed detail,220 x 220 mm glass or PEI build surface,1,,,,Heat Bed BOM: 1 surface; choose glass or PEI, not both
+Bed detail,220 x 220 mm heated bed,1,,,,"Heat Bed BOM: 1 x 24V PCB bed; other documentation mentions a different bed type, verify revision"
+Bed detail,220 x 220 mm glass or PEI build surface,1,,,,"Heat Bed BOM: 1 surface; choose glass or PEI, not both"
 Bed detail,Bed springs,4,,,,Heat Bed BOM: 4
 Bed detail,Bed levelling thumbwheels,4,,,,Heat Bed BOM: 4; verify thread size
 Enclosure detail,3 mm acrylic enclosure panels,4,,,,Enclosure BOM: 4 panels; confirm dimensions and temperature suitability
