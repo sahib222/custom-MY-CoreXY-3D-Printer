@@ -30,7 +30,7 @@ Reviewed the repository tree, the master and electronics BOMs, the separate mate
 
 ## Budget audit
 
-- The current master BOM's priced rows arithmetically add to **$761.84** (approximately **₹71,369** at the sheet's stated 1 USD = ₹93.68 reference rate).
+- The current master BOM's priced rows arithmetically add to **$785.85** (approximately **₹73,618** at the sheet's stated 1 USD = ₹93.68 reference rate). This includes a **$24.01 unitemized reconciliation allowance** added to match the user-provided parts total; it is not an independently verified component price.
 - This is **not a verified project total**: broad category allowances coexist with some separately priced components, so some costs may overlap. Unpriced checklist lines are excluded.
 - The Electronics BOM's $406.81 is a subsystem view of items already represented in the master BOM. **Do not add it to the master total.**
 - The separate `BOM/Materials-and-Cost.csv` still has an old $500 / ₹44,000 estimate and an old illustrative ₹88 exchange rate. It is superseded and must not be used for funding totals.
