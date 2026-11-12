@@ -48,6 +48,22 @@ Some folders may be added as the project progresses. Only files that have actual
 
 Additional full-model CAD screenshots, electronics layout, schematic and wiring-diagram images will be added when those files are ready. See [Images/](Images/) for image assets and [JOURNAL.md](JOURNAL.md) for dated progress notes.
 
+## Planned materials
+
+The following are material candidates for planning, not a final manufacturing specification. Confirm each material against the original CAD, mechanical loads, operating temperatures and supplier datasheets before ordering.
+
+| Part / subsystem | Candidate material | Notes |
+|---|---|---|
+| Frame | Aluminium extrusion | Confirm profile, slot type, lengths and wall dimensions from the source design. |
+| Linear guides and fasteners | Steel components | Confirm rail size, corrosion protection, screw grades and exact dimensions. |
+| Motion belts | Reinforced timing belt | Confirm belt type, width, length and pulley compatibility. |
+| Printed covers and non-load-bearing parts | PLA | Suitable only where the part's temperature and mechanical requirements permit. |
+| Functional printed brackets and mounts | PETG candidate | Validate strength, creep and temperature suitability for each part before use. |
+| Enclosure panels | Material not yet selected | Confirm the original design's panel material, thickness and temperature rating. |
+| Wiring insulation and cable management | Rated electrical insulation and suitable clips/ties | Select only after the electrical design and temperature environment are reviewed. |
+
+The BOM includes allowances for filament and small hardware such as M3/M4/M5 screws, nuts, extrusion T-nuts, washers, heat-set inserts, cable ties and clips. Exact quantities and sizes remain to be checked against the final assembly.
+
 ## Main subsystems
 
 1. **Frame:** aluminium extrusion structure and fasteners.
