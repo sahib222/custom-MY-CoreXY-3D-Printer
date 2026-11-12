@@ -7,7 +7,7 @@ Build platform,Build plate and mounting hardware,1,23.48,23.48,https://www.amazo
 Printed parts,Filament for remaining mechanical printed parts,1,23.48,23.48,https://www.amazon.in/s?k=PETG+3D+printer+filament+1kg,Planning allowance; confirm material and print quantities
 Fasteners,M3 screws and matching nuts assortment,1,6.40,6.40,https://www.amazon.in/s?k=M3+screw+nut+assortment,Planning allowance; confirm lengths and head types from CAD
 Fasteners,M4 and M5 screws and nuts assortment,1,5.34,5.34,https://www.amazon.in/s?k=M4+M5+screw+nut+assortment,Planning allowance; confirm lengths and profile compatibility
-Fasteners,2020 aluminium extrusion T-nuts and corner fasteners,1,5.34,5.34,https://www.amazon.in/s?k=2020+T+nut+corner+bracket+fasteners,Planning allowance; verify extrusion slot type
+Fasteners,2020 aluminium extrusion T-nuts and corner fasteners,1,5.34,5.34,https://www.amazon.in/s?k=2020+T+nut+corner+bracket+fasteners,"Planning allowance; source BOM says 2020, but product overview says 3030 extrusion; do not buy until revision/profile confirmed"
 Fasteners,Washers and heat-set threaded inserts,1,6.40,6.40,https://www.amazon.in/s?k=3D+printer+heat+set+inserts+washers,Planning allowance; confirm insert sizes match printed parts
 Cable management,"Cable ties, clips and strain-relief accessories",1,3.20,3.20,https://www.amazon.in/s?k=cable+ties+clips+3D+printer,Planning allowance; select suitable sizes and temperature ratings
 Controller,BIGTREETECH SKR Mini E3 V3.0 controller board,1,42.70,42.70,https://www.amazon.in/s?k=BIGTREETECH+SKR+Mini+E3+V3.0,Estimated allowance; five onboard TMC2209 driver interfaces; confirm exact motor mapping and board revision
@@ -16,11 +16,11 @@ Motion,XY stepper motors,2,9.61,19.21,https://www.amazon.in/s?k=NEMA17+stepper+m
 Motion,Z-axis stepper motors,4,19.21,76.86,https://www.amazon.in/s?k=NEMA17+stepper+motor+3D+printer,Four Z-drive motor assemblies are shown in the official assembly guide; driver arrangement and exact motor specification still need verification
 Motion,Extruder stepper motor,1,9.61,9.61,https://www.amazon.in/s?k=NEMA17+extruder+stepper+motor,Verify EVA extruder compatibility
 Host,Klipper host computer,1,48.04,48.04,https://www.amazon.in/s?k=Raspberry+Pi+single+board+computer,Planning allowance; exact Pi model and storage not specified
-Power,5 V DC supply,1,19.21,19.21,https://www.amazon.in/s?k=Mean+Well+RS-25-5+power+supply,Estimate; verify total 5 V load and approved enclosed mounting
+Power,5 V DC supply,0,19.21,,https://www.amazon.in/s?k=Mean+Well+RS-25-5+power+supply,"Not included in total; source accessory BOM specifies a 5 V DC-DC buck converter rather than a separate 5 V PSU"
 Power,24 V DC supply,1,37.36,37.36,https://www.amazon.in/s?k=Mean+Well+LRS-200-24+power+supply,Estimate; verify load calculation before selecting
 Thermal,Hotend heater cartridge,1,3.74,3.74,https://www.amazon.in/s?k=24V+40W+3D+printer+heater+cartridge,Verify dimensions and hotend rating
 Thermal,Hotend thermistor,1,1.60,1.60,https://www.amazon.in/s?k=100K+NTC+3D+printer+thermistor,Verify thermistor curve and firmware configuration
-Thermal,Heated bed (if fitted),1,26.69,26.69,https://www.amazon.in/s?k=3D+printer+heated+bed,Conditional allowance only; source references 240 V AC bed; do not buy until design is confirmed
+Thermal,Heated bed (if fitted),1,26.69,26.69,https://www.amazon.in/s?k=3D+printer+heated+bed,"Unresolved conflict: Heat Bed BOM lists 220x220 mm 24 V PCB bed; product overview says 240 V bed. Do not buy until exact revision is confirmed"
 Power protection,SSR for bed (if required),1,9.61,9.61,https://www.amazon.in/s?k=SSR+solid+state+relay+3D+printer,Conditional allowance only; mains-rated design and selection require qualified adult electrician
 Cooling,Cooling fans,2,3.74,7.47,https://www.amazon.in/s?k=4010+5015+24V+3D+printer+fan,Combined allowance for two; verify size and voltage
 Homing,Endstop switches,3,1.28,3.84,https://www.amazon.in/s?k=3D+printer+mechanical+endstop+switch,Combined allowance for three; verify switch type
@@ -62,7 +62,7 @@ Enclosure detail,Door handle,1,,,,Enclosure BOM: 1
 Enclosure detail,Magnetic door catches,2,,,,Enclosure BOM: 2
 Accessory detail,IEC C14 inlet with fuse holder,1,,,,Source accessory BOM; mains-side selection/installation by qualified adult electrician
 Accessory detail,Main rocker switch,1,,,,Source accessory BOM; mains-rated component selection by qualified adult electrician
-Accessory detail,24 V DC 350 W power supply,1,,,,Source accessory BOM example conflicts with current allowance; load calculation and adult electrician review required
+Accessory detail,24 V DC 350 W power supply,1,,,,Source accessory BOM specifies 350 W; conflicts with current 200 W allowance. Do not count or purchase as a second supply; final architecture and load need professional review
 Accessory detail,24 V to 5 V DC-DC buck converter,1,,,,Source accessory BOM; size only after 5 V load is known
 Accessory detail,24 V LED strip,1,,,,Optional source accessory; confirm length/current and enclosure suitability
 Accessory detail,0.4 mm nozzle,1,,,,Source accessory BOM; verify hotend thread/type
@@ -81,4 +81,44 @@ Fasteners detail,M3 extrusion T-nuts,50,,,,Fasteners BOM: 50; confirm slot/profi
 Fasteners detail,M5x10 socket-head screws,50,,,,Fasteners BOM: 50
 Fasteners detail,M5 hex nuts,50,,,,Fasteners BOM: 50
 Fasteners detail,M5 extrusion T-nuts,50,,,,Fasteners BOM: 50; confirm slot/profile compatibility
-TOTAL,Total including shipping,1,,781.06,,"Indicative planning estimate only. Currency conversion uses 1 USD = 93.68 INR on 12 Nov 2026; verify live India prices, availability, quantities, GST, shipping and compatibility before purchase."
+Z-drive detail,Vertical MGN9 linear rails,4,,,,Assembly guide specifies four vertical rails; product overview instead describes MGN12 on all axes; confirm revision
+Z-drive detail,Vertical MGN9 rail carriages,4,,,,Planning count assumes one carriage per rail; verify actual parts list and CAD
+Z-drive detail,GT2 80-tooth Z-drive pulleys,4,,,,Assembly guide: one per each of four Z-drive assemblies
+Z-drive detail,625 bearings,12,,,,Assembly guide: three per each of four Z-drive assemblies
+Z-drive detail,5 x 60 mm Z-drive shafts,4,,,,Assembly guide: one per each of four Z-drive assemblies
+Z-drive detail,Closed-loop GT2 188 mm Z-drive belts,4,,,,Assembly guide: one per each of four Z-drive assemblies
+Z-drive detail,GT2 16-tooth motor pulleys,4,,,,Assembly guide describes one motor pulley per Z-drive; verify motor shaft bore
+Z-drive detail,GT2 20-tooth Z-idler pulleys,4,,,,Assembly guide: one per each of four Z-idler assemblies
+Z-drive detail,Z-drive printed assemblies,4,,,,Four complete Z-drive assemblies described in assembly chapter
+Z-drive detail,Z-idler printed assemblies,4,,,,Four Z-idler assemblies described in assembly chapter
+Z-drive detail,M3x40 socket-head screws,4,,,,Planning count assumes one per Z-drive assembly; verify exploded drawing
+Z-drive detail,M5x40 socket-head screws,4,,,,Planning count assumes one per Z-drive mounting; verify exact count
+Z-drive detail,M5x10 button-head screws,4,,,,Planning count assumes one per motor mounting; verify exact count
+Z-drive detail,M5x30 button-head screws,4,,,,Planning count assumes one per Z-idler assembly; verify exact count
+Electronics detail,DIN mounting rails,2,,,,Assembly chapter specifies two DIN rails; length and profile not stated in BOM
+Electronics detail,Electronics deck panel,1,,,,Assembly chapter describes one deck panel; material and dimensions require CAD check
+Frame printed,Frame feet,4,,,,Frame BOM: 4 printed feet
+Gantry printed,X-carriage,1,,,,Gantry BOM: 1
+Gantry printed,Y-carriages,2,,,,Gantry BOM: 2
+Gantry printed,Gantry motor mounts,2,,,,Gantry BOM: 2
+Gantry printed,Gantry idler mounts,2,,,,Gantry BOM: 2
+Gantry printed,Belt tensioners,2,,,,Gantry BOM: 2
+Z-motion printed,Z motor mount,1,,,,Z-Motion BOM lists 1; conflicts with four Z-drive assembly description
+Z-motion printed,Z rod holders,2,,,,Z-Motion BOM: 2
+Z-motion printed,Z carriage,1,,,,Z-Motion BOM: 1
+Extruder printed,Extruder body,1,,,,Extruder BOM: 1
+Extruder printed,Extruder idler,1,,,,Extruder BOM: 1
+Extruder printed,Fan duct,1,,,,Extruder BOM: 1
+Heat-bed printed,Bed support,1,,,,Heat Bed BOM: 1
+Enclosure printed,Panel holders,16,,,,Enclosure BOM: 16
+Enclosure printed,Door hinge mounts,2,,,,Enclosure BOM: 2
+Enclosure printed,Door handle mount,1,,,,Enclosure BOM: 1
+Electronics printed,Controller box,1,,,,Electronics BOM: 1
+Electronics printed,Controller box lid,1,,,,Electronics BOM: 1
+Electronics printed,Fan holders,2,,,,Electronics BOM: 2
+Accessories printed,PSU cover,1,,,,Accessories BOM: 1
+Accessories printed,PSU holder,1,,,,Accessories BOM: 1
+Accessories printed,IEC inlet holder,1,,,,Accessories BOM: 1
+Accessories printed,Main switch holder,1,,,,Accessories BOM: 1
+Accessories printed,Webcam holder,1,,,,Accessories BOM: 1
+TOTAL,Provisional planning estimate only (not purchase-ready),1,,781.06,,"Indicative planning estimate only. Currency conversion uses 1 USD = 93.68 INR on 12 Nov 2026; verify live India prices, availability, quantities, GST, shipping and compatibility before purchase."
