@@ -1,4 +1,4 @@
-# Repository audit — 12 November 2026
+# Repository audit — updated 23 November 2026
 
 ## Scope
 Reviewed the repository tree, the master and electronics BOMs, the separate materials and small-hardware sheets, README, project plan, electronics plan, journal, image index, and the original MY-CoreXY documentation pages linked below. This is a documentation/consistency audit; it is not a physical inspection or CAD fit validation.
