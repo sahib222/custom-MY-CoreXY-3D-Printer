@@ -1,13 +1,13 @@
 Category,Item,Qty,Estimated unit price (USD),Estimated line total (USD),Supplier link,Status / compatibility notes
-Frame,"Aluminium extrusions, brackets and frame fasteners",1,84.54,84.54,https://www.amazon.in/s?k=2020+aluminium+extrusion+profile+India,Category-level allowance; confirm lengths/profile and brackets
-Motion,"Linear rails, carriages and Z-motion hardware",1,93.94,93.94,https://www.amazon.in/s?k=MGN12+linear+rail+3D+printer,Category-level allowance; verify lengths and quantities
-Drive,"Belts, pulleys, idlers and drive hardware",1,70.45,70.45,https://www.amazon.in/s?k=GT2+belt+pulley+idler+3D+printer,Category-level allowance; verify belt length and pulley tooth count
-Toolhead,"Hotend, extruder and compatible toolhead parts",1,51.67,51.67,https://www.amazon.in/s?k=3D+printer+hotend+extruder+EVA,Category-level allowance; verify exact EVA configuration
-Build platform,Build plate and mounting hardware,1,23.48,23.48,https://www.amazon.in/s?k=3D+printer+build+plate,Planning allowance; verify original design configuration
-Fasteners,M3 screws and matching nuts assortment,1,6.40,6.40,https://www.amazon.in/s?k=M3+screw+nut+assortment,Planning allowance; confirm lengths and head types from CAD
-Fasteners,M4 and M5 screws and nuts assortment,1,5.34,5.34,https://www.amazon.in/s?k=M4+M5+screw+nut+assortment,Planning allowance; confirm lengths and profile compatibility
-Fasteners,2020 aluminium extrusion T-nuts and corner fasteners,1,5.34,5.34,https://www.amazon.in/s?k=2020+T+nut+corner+bracket+fasteners,"Planning allowance; source BOM says 2020, but product overview says 3030 extrusion; do not buy until revision/profile confirmed"
-Fasteners,Washers and heat-set threaded inserts,1,6.40,6.40,https://www.amazon.in/s?k=3D+printer+heat+set+inserts+washers,Planning allowance; confirm insert sizes match printed parts
+Frame,"Aluminium extrusions, brackets and frame fasteners",1,,,https://www.amazon.in/s?k=2020+aluminium+extrusion+profile+India,Category-level allowance; confirm lengths/profile and brackets
+Motion,"Linear rails, carriages and Z-motion hardware",1,,,https://www.amazon.in/s?k=MGN12+linear+rail+3D+printer,Category-level allowance; verify lengths and quantities
+Drive,"Belts, pulleys, idlers and drive hardware",1,,,https://www.amazon.in/s?k=GT2+belt+pulley+idler+3D+printer,Category-level allowance; verify belt length and pulley tooth count
+Toolhead,"Hotend, extruder and compatible toolhead parts",1,,,https://www.amazon.in/s?k=3D+printer+hotend+extruder+EVA,Category-level allowance; verify exact EVA configuration
+Build platform,Build plate and mounting hardware,1,,,https://www.amazon.in/s?k=3D+printer+build+plate,Planning allowance; verify original design configuration
+Fasteners,M3 screws and matching nuts assortment,1,,,https://www.amazon.in/s?k=M3+screw+nut+assortment,Planning allowance; confirm lengths and head types from CAD
+Fasteners,M4 and M5 screws and nuts assortment,1,,,https://www.amazon.in/s?k=M4+M5+screw+nut+assortment,Planning allowance; confirm lengths and profile compatibility
+Fasteners,2020 aluminium extrusion T-nuts and corner fasteners,1,,,https://www.amazon.in/s?k=2020+T+nut+corner+bracket+fasteners,"Planning allowance; source BOM says 2020, but product overview says 3030 extrusion; do not buy until revision/profile confirmed"
+Fasteners,Washers and heat-set threaded inserts,1,,,https://www.amazon.in/s?k=3D+printer+heat+set+inserts+washers,Planning allowance; confirm insert sizes match printed parts
 Cable management,"Cable ties, clips and strain-relief accessories",1,3.20,3.20,https://www.amazon.in/s?k=cable+ties+clips+3D+printer,Planning allowance; select suitable sizes and temperature ratings
 Controller,BIGTREETECH SKR Mini E3 V3.0 controller board,1,42.70,42.70,https://www.amazon.in/s?k=BIGTREETECH+SKR+Mini+E3+V3.0,Estimated allowance; five onboard TMC2209 driver interfaces; confirm exact motor mapping and board revision
 Motion,XY stepper motors,2,9.61,19.21,https://www.amazon.in/s?k=NEMA17+stepper+motor+3D+printer,"Per-motor estimate; verify current, length and connector"
@@ -86,4 +86,4 @@ AB-drive detail,M5 precision shims,TBD,0.05,,https://www.amazon.in/s?k=M5+precis
 AB-drive fasteners,M3x30 socket-head screws,TBD,0.03,,https://www.amazon.in/s?k=M3x30+socket+head+screw,A/B drive assembly hardware; quantity and exact head type require exploded-view/CAD confirmation | Indicative per-screw estimate; quantity TBD; not included in subtotal.
 AB-drive fasteners,M3x40 socket-head screws,TBD,0.03,,https://www.amazon.in/s?k=M3x40+socket+head+screw,A/B idler assembly hardware; quantity and exact head type require exploded-view/CAD confirmation | Indicative per-screw estimate; quantity TBD; not included in subtotal.
 AB-drive fasteners,M3 flat washers,TBD,0.01,,https://www.amazon.in/s?k=M3+flat+washer,A/B idler assembly hardware; quantity and dimensions require CAD confirmation | Indicative per-washer estimate; quantity TBD; not included in subtotal.
-TOTAL,"Parts subtotal; excludes all 3D-printed parts, filament and printing costs",1,,691.92,,"Planning estimate for purchased components only. All printed parts, filament/material and printing electricity are excluded. Verify design revision, quantities, GST, delivery and compatibility before purchase."
+TOTAL,"Parts subtotal; excludes all 3D-printed parts, filament and printing costs",,,,,"Calculated from priced purchase rows only; summary allowances above are not separately counted. Printed parts, filament and printing electricity excluded. Verify all quantities and revision conflicts before purchase."
