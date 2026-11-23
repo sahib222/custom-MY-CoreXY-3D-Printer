@@ -97,3 +97,24 @@ I will add a new dated entry when I make real progress. I will not use an old im
 **My decision:** Keep the board as a candidate only. I need confirmation of the original motor grouping and driver requirements before buying it.
 
 **Status:** Four physical Z-drive motors are confirmed from the assembly guide; the controller arrangement is still unverified.
+
+## 23 November 2026 — Cleaning the BOM and checking the project budget
+
+**What I worked on:** I reviewed the master Bill of Materials (BOM) for my MY-CoreXY 3D printer project and cleaned up the list so it focuses on purchased components. I also checked how the prices are counted, because a parts list can give a misleading total if the same group of components is counted more than once.
+
+**Removing optional items:** I removed several features that are not necessary for the first version of the printer. These included the USB monitoring camera and its holder, the touchscreen and its mounting hardware, the filament-runout sensor, the LED strip, optional 0.6 mm and 0.8 mm nozzles, and the AI monitoring software placeholder. I also removed zero-quantity entries for separate stepper-driver modules and a separate 5 V power supply. The proposed controller has onboard driver interfaces, while the accessory list refers to a DC-DC converter for the 5 V supply. These choices still need to be checked against the final electronics design.
+
+**Excluding printed-part costs:** I decided that the active BOM should show purchased components only. I therefore removed the printed-part entries and the separate printing-cost worksheet from the active budget. Filament, printing electricity and printing time are not included in the current total. This does not mean the printer can be built without printed parts; it means those parts will be made separately and their material and production costs are outside this version of the budget.
+
+**Fixing duplicate prices:** I found that the BOM had broad category allowances for groups such as the frame, motion system, drive system, toolhead, build platform and fasteners. It also contained detailed component rows for many of those same groups. If both the allowance and its detailed parts are added, the total can count the same items twice. I kept the category rows as headings and cleared their prices so the priced component rows are counted once. I left the detailed component estimates in place, including notes that identify prices or quantities that still need checking.
+
+**Budget result:** After the duplicate category prices were cleared, I recalculated the priced purchase rows in the master BOM. The current provisional subtotal is **$665.62 USD**, or approximately **₹61,675** using the reference conversion of ₹92.68 per US dollar recorded in the project documents. The updated file contains 88 data rows, of which 73 have priced quantities. This is an estimate, not a confirmed supplier quotation. Shipping, taxes, availability and actual seller prices may change the final amount. Rows with unknown quantities or incomplete specifications are not included in the calculated subtotal.
+
+**What I learned:** A BOM needs more than a list of part names and prices. It must show whether a price is a category allowance or an individual component price. It should also explain uncertain quantities, compatibility questions and items that are not included. Keeping these details visible makes the project easier for another person to review and helps prevent accidental double counting.
+
+**What is still unresolved:** The original MY-CoreXY documentation has differences in the frame profile, linear-rail sizes, Z-axis arrangement and heated-bed specification. The proposed SKR Mini E3 V3.0 controller also needs a confirmed motor and driver arrangement. These questions must be resolved against the exact CAD revision before ordering parts. The current BOM is therefore not purchase-ready. Mains-powered equipment, grounding, fusing and heated-bed electrical arrangements must be reviewed by a qualified adult electrician.
+
+**Next steps:** I will compare the remaining quantities with the original CAD and assembly documents, confirm compatible parts, and replace provisional prices with current supplier quotations where possible. I will also compare the repository total with the Hack Club project form and investigate the difference rather than changing prices just to force the numbers to match. I will add photographs or CAD screenshots only when they show work I have actually completed.
+
+**Status:** The documentation and budget have been cleaned up, but the printer has not been physically built or tested. The next stage is design verification, not claiming a completed machine.
+
