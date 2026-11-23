@@ -30,8 +30,9 @@ Reviewed the repository tree, the master and electronics BOMs, the separate mate
 
 ## Budget audit
 
-- The current master BOM's priced rows arithmetically add to **$785.85** (approximately **₹73,618** at the sheet's stated 1 USD = ₹93.68 reference rate). This includes a **$24.01 unitemized reconciliation allowance** added to match the user-provided parts total; it is not an independently verified component price.
-- This is **not a verified project total**: broad category allowances coexist with some separately priced components, so some costs may overlap. Unpriced checklist lines are excluded.
+- The current master BOM's priced rows arithmetically add to **$785.85** (approximately **₹72,836** at the 23 November 2026 reference rate of 1 USD = ₹92.68). This includes a **$24.01 unitemized reconciliation allowance** added to match the user-provided parts total; it is not an independently verified component price.
+- This is a **parts subtotal**, not a complete printing-inclusive total. It includes provisional filament allowances but excludes printer electricity. Broad category allowances coexist with some separately priced components, so costs may overlap. Unpriced checklist lines are excluded.
+- Added `BOM/Printing-Cost.csv` with 57 candidate printed objects from the BOM checklist. The sheet calculates filament (including 10% waste) and electricity once slicer grams and print hours are entered. The PETG costing reference is ₹999/kg ($10.78/kg); PLA reference is ₹799/kg ($8.62/kg). Electricity reference is ₹3.85/kWh ($0.0415/kWh) for Punjab's first domestic slab. A 150 W average printer draw is only a placeholder, not a measured value. The worksheet material total may overlap the filament allowances already included in the master BOM and must not be added again until reconciled.
 - The Electronics BOM's $406.81 is a subsystem view of items already represented in the master BOM. **Do not add it to the master total.**
 - The separate `BOM/Materials-and-Cost.csv` still has an old $500 / ₹44,000 estimate and an old illustrative ₹88 exchange rate. It is superseded and must not be used for funding totals.
 - The small-hardware sheet contains TBD quantities. The master fastener rows reflect the published fastener BOM but may not cover every assembly-specific screw, insert, spacer and clip.
