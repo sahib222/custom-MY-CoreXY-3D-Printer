@@ -19,7 +19,7 @@ The master BOM records the published quantities for frame extrusions, gantry rai
 
 ## Budget audit
 
-**Unit-price update (23 November 2026):** 59 previously blank non-filament component rows in the master BOM now have indicative USD unit-price estimates and supplier reference links. These are planning estimates, not confirmed quotes. Their line totals are intentionally left blank because many parts are already covered by the broad category allowances above; adding them again would double-count the budget. Filament remains unpriced, as requested. Rows with unknown dimensions, unresolved design revision or TBD quantities still need confirmation.
+**Unit-price update (23 November 2026):** 67 previously blank non-filament component rows in the master BOM now have indicative USD unit-price estimates and supplier reference links. Eight additional rows were priced in the latest pass. These are a mix of supplier-listed reference prices and provisional allowances, not confirmed quotes. Their line totals are intentionally left blank because many parts are already covered by broad category allowances; adding them again would double-count the budget. Filament and printed-part material remain unpriced, as requested. Rows with unknown dimensions, unresolved design revision or TBD quantities still need confirmation.
 
 - The current priced rows in `BOM.csv` total **$755.43 USD** (approximately **₹70,013** at the repository's stated reference conversion of 1 USD = ₹92.68).
 - The filament row is now **unpriced**: material is listed, but quantity and cost are blank/TBD. No printing cost has been added to the master BOM subtotal.
