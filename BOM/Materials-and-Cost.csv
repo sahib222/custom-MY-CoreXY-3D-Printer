@@ -1,6 +1,6 @@
 Category,Materials / Components,Quantity,Estimated Cost (USD),Estimated Cost (INR),Status / Notes,Supplier / Link
 Status,Obsolete preliminary estimate,,,,Superseded by the master BOM and Documentation/AUDIT-REPORT.md; do not use the former 500 USD total or INR 88 exchange rate,
-Reference,Master BOM,,,,Use ../BOM.csv; current parts subtotal is 785.85 USD; printing electricity is excluded and filament worksheet is BOM/Printing-Cost.csv,
+Reference,Master BOM,,,,Use ../BOM.csv; current cleaned master BOM subtotal is $691.92 USD; printing electricity excluded; filament/printed-part material still awaits slicer data.,
 Reference,Electronics BOM,,,,Subsystem breakdown only; do not add its subtotal to the master BOM,
 Material,Aluminium extrusion,,,,Resolve 2020 versus 3030 profile and exact cut lengths,
 Material,Linear rails and carriages,,,,Resolve MGN9 versus MGN12 and exact CAD revision,
