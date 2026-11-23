@@ -19,11 +19,11 @@ The master BOM records the published quantities for frame extrusions, gantry rai
 
 ## Budget audit
 
-**Unit-price update (23 November 2026):** 67 previously blank non-filament component rows in the master BOM now have indicative USD unit-price estimates and supplier reference links. Eight additional rows were priced in the latest pass. These are a mix of supplier-listed reference prices and provisional allowances, not confirmed quotes. Their line totals are intentionally left blank because many parts are already covered by broad category allowances; adding them again would double-count the budget. Filament and printed-part material remain unpriced, as requested. Rows with unknown dimensions, unresolved design revision or TBD quantities still need confirmation.
+**Unit-price update (23 November 2026):** Indicative unit-price references are recorded for many non-filament components. Optional camera, touchscreen, runout sensor, LED strip, extra nozzles and unitemized reconciliation allowance have been removed from the active BOM. Zero-quantity separate driver and 5 V PSU rows have also been removed because the proposed controller has onboard driver interfaces and the accessory BOM specifies a DC-DC buck converter. These are a mix of supplier-listed reference prices and provisional allowances, not confirmed quotes. Their line totals are intentionally left blank because many parts are already covered by broad category allowances; adding them again would double-count the budget. Filament and printed-part material remain unpriced pending slicer data. Rows with unknown dimensions, unresolved design revision or TBD quantities still need confirmation.
 
-- The current priced rows in `BOM.csv` total **$755.43 USD** (approximately **₹70,013** at the repository's stated reference conversion of 1 USD = ₹92.68).
-- The filament row is now **unpriced**: material is listed, but quantity and cost are blank/TBD. No printing cost has been added to the master BOM subtotal.
-- The subtotal retains a **$24.01 unitemized reconciliation allowance** from the earlier user-provided target. It is not a verified component price.
+- The cleaned priced rows in `BOM.csv` total **$691.92 USD** (approximately **₹64127** at the repository's stated reference conversion of 1 USD = ₹92.68).
+- The filament row and all printed-part rows remain **unpriced**: actual filament grams and print hours must come from the final CAD revision and slicer. No printing cost has been added to the master BOM subtotal.
+- The unitemized $24.01 reconciliation allowance has been removed because it did not represent a verified component or supplier quote.
 - Some broad category allowances may overlap with individual priced rows. Unpriced checklist lines are excluded. The subtotal is provisional and not purchase-ready.
 - The separate `BOM/Printing-Cost.csv` worksheet is not included in the master subtotal. Do not add its calculations until actual slicer data is available and any overlap is reconciled.
 - The Electronics BOM is a subsystem view of items already represented in the master BOM; do not add its subtotal again.
@@ -56,3 +56,10 @@ The master BOM records the published quantities for frame extrusions, gantry rai
 - Electronics BOM: https://docs.my-machines.com/3d-printers/my-corexy/bom/electronics/
 - Accessories BOM: https://docs.my-machines.com/3d-printers/my-corexy/bom/accessories/
 - Fasteners BOM: https://docs.my-machines.com/3d-printers/my-corexy/bom/fasteners/
+
+
+## Optional-item cleanup — 23 November 2026
+
+Removed the optional USB monitoring camera and its webcam holder, touchscreen and its mounting hardware, AI monitoring software placeholder, filament runout sensor, LED strip, 0.6 mm and 0.8 mm optional nozzles, zero-quantity separate stepper-driver modules, zero-quantity separate 5 V PSU, and the unitemized reconciliation allowance. The standard 0.4 mm nozzle, essential controller/electronics, frame, motion, bed, enclosure and safety-related line items remain. The touchscreen/camera features can be added later if the selected controller/host and budget justify them.
+
+The cleaned master BOM subtotal is a planning estimate, not a verified purchase quote. The Hack Club form's 34 flagged rows cannot be individually corrected from the supplied screenshot alone: it shows the count and one visible missing-price row, not the other 33 line items. The repo cleanup does not submit or alter the Hack Club form.
