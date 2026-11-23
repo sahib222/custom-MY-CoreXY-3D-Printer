@@ -30,7 +30,8 @@ The original designer and source project are credited. This repository is for do
 
 | Path | Contents |
 |---|---|
-| `BOM.csv` | Master checklist and provisional, unverified budget estimate |
+| `BOM.csv` | Master checklist and provisional, unverified parts subtotal |
+| `BOM/Printing-Cost.csv` | 57-row slicer-based filament and electricity cost worksheet |
 | `Documentation/AUDIT-REPORT.md` | Full source, quantity, cost and evidence audit |
 | `CAD/` | CAD models and exports |
 | `Images/` | Planned location for design screenshots and build photos |
