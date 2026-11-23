@@ -48,6 +48,9 @@ The original documentation has unresolved differences:
 The master BOM includes unpriced checklist rows where quantities or compatibility still need confirmation. Read [the full audit report](Documentation/AUDIT-REPORT.md) before purchasing. Mains-powered parts and wiring must be reviewed by a qualified adult electrician.
 
 ## Budget
+
+**Unit-price update (23 November 2026):** 59 previously blank non-filament component rows in the master BOM now have indicative USD unit-price estimates and supplier reference links. These are planning estimates, not confirmed quotes. Their line totals are intentionally left blank because many parts are already covered by the broad category allowances above; adding them again would double-count the budget. Filament remains unpriced, as requested. Rows with unknown dimensions, unresolved design revision or TBD quantities still need confirmation.
+
 The current master BOM subtotal is **$755.43 USD** (approximately **₹70,013** using the repository's stated reference conversion of 1 USD = ₹92.68). This subtotal excludes filament cost and all printing electricity/labour because the filament row is intentionally unpriced. It retains a **$24.01 unitemized reconciliation allowance** from the earlier user-provided target; that allowance is not a verified component quote. Some broad category allowances may overlap with separately priced parts, and many checklist rows remain unpriced. Treat this as a provisional planning figure, not a purchase-ready quote or complete project cost.
 
 The separate `BOM/Printing-Cost.csv` worksheet is not included in this subtotal. Do not add its estimates until the printed-part list and slicer outputs have been checked and reconciled.
