@@ -1,10 +1,9 @@
 Category,Materials / Components,Quantity,Estimated Cost (USD),Estimated Cost (INR),Status / Notes,Supplier / Link
 Status,Obsolete preliminary estimate,,,,Superseded by the master BOM and Documentation/AUDIT-REPORT.md; do not use the former 500 USD total or INR 88 exchange rate,
-Reference,Master BOM,,,,Use ../BOM.csv; current cleaned master BOM subtotal is $691.92 USD; printing electricity excluded; filament/printed-part material still awaits slicer data.,
+Reference,Master BOM,,,,"Use ../BOM.csv; current purchased-components subtotal $691.92 USD; all 3D-printed parts, filament and printing costs excluded.",
 Reference,Electronics BOM,,,,Subsystem breakdown only; do not add its subtotal to the master BOM,
 Material,Aluminium extrusion,,,,Resolve 2020 versus 3030 profile and exact cut lengths,
 Material,Linear rails and carriages,,,,Resolve MGN9 versus MGN12 and exact CAD revision,
-Material,Printed components,,,,Confirm PETG ASA or ABS suitability per part and operating temperature,
 Material,Enclosure panels,,,,Confirm panel material dimensions and temperature rating,
 Material,Electrical cable and insulation,,,,Final selection and installation require qualified adult electrician,
 Consumable,Lubricant inserts labels and cable management,,,,Confirm exact specifications from final assembly,
