@@ -25,9 +25,9 @@ Power protection,SSR for bed (if required),1,9.61,9.61,https://www.amazon.in/s?k
 Cooling,Cooling fans,2,3.74,7.47,https://www.amazon.in/s?k=4010+5015+24V+3D+printer+fan,Combined allowance for two; verify size and voltage
 Homing,Endstop switches,3,1.28,3.84,https://www.amazon.in/s?k=3D+printer+mechanical+endstop+switch,Combined allowance for three; verify switch type
 Wiring,Wire harness and connectors,1,19.21,19.21,https://www.amazon.in/s?k=3D+printer+wiring+kit+connectors,Allowance; final wire gauges/connectors depend on verified current and layout
-Printed,Controller box,1,,,,Printed part; filament/material only, no printing price added; print part P-EL-0001
-Printed,Controller box lid,1,,,,Printed part; filament/material only, no printing price added; print part P-EL-0002
-Printed,Fan holder,2,,,,Printed part; filament/material only, no printing price added; print part P-EL-0003
+Printed,Controller box,1,,,,"Printed part; filament/material only, no printing price added; print part P-EL-0001"
+Printed,Controller box lid,1,,,,"Printed part; filament/material only, no printing price added; print part P-EL-0002"
+Printed,Fan holder,2,,,,"Printed part; filament/material only, no printing price added; print part P-EL-0003"
 Safety,Power isolation / grounding / fusing hardware,1,16.01,16.01,https://www.amazon.in/s?k=electrical+enclosure+fuse+terminal+block+India,Provisional allowance; final design and installation must be reviewed by qualified adult electrician
 Monitoring,USB camera for remote print monitoring,1,12.81,12.81,https://www.amazon.in/s?k=USB+camera+webcam+for+3D+printer+monitoring,Planning allowance; confirm compatibility with selected Klipper host and mounting
 User interface,Compatible touchscreen display,1,26.69,26.69,https://www.amazon.in/s?k=Klipper+touchscreen+display+3D+printer,"Planning allowance; confirm display size, interface and host compatibility"
