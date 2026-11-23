@@ -1,6 +1,6 @@
 Category,Materials / Components,Quantity,Estimated Cost (USD),Estimated Cost (INR),Status / Notes,Supplier / Link
 Status,Obsolete preliminary estimate,,,,Superseded by the master BOM and Documentation/AUDIT-REPORT.md; do not use the former 500 USD total or INR 88 exchange rate,
-Reference,Master BOM,,,,"Use ../BOM.csv; current purchased-components subtotal $691.92 USD; all 3D-printed parts, filament and printing costs excluded.",
+Reference,Master BOM,,,,"Use ../BOM.csv; current purchased-components subtotal $665.62 USD; all 3D-printed parts, filament and printing costs excluded.",
 Reference,Electronics BOM,,,,Subsystem breakdown only; do not add its subtotal to the master BOM,
 Material,Aluminium extrusion,,,,Resolve 2020 versus 3030 profile and exact cut lengths,
 Material,Linear rails and carriages,,,,Resolve MGN9 versus MGN12 and exact CAD revision,
