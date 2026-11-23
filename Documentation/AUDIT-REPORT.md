@@ -18,6 +18,9 @@ Reviewed the repository tree, master and electronics BOMs, separate materials an
 The master BOM records the published quantities for frame extrusions, gantry rails/belts/pulleys, Z-drive assemblies, extruder, bed, enclosure, electronics, accessories and fasteners. Rows with blank quantities/prices are checklist items, not priced purchases. Some counts remain assumptions and require the exact CAD revision.
 
 ## Budget audit
+
+**Unit-price update (23 November 2026):** 59 previously blank non-filament component rows in the master BOM now have indicative USD unit-price estimates and supplier reference links. These are planning estimates, not confirmed quotes. Their line totals are intentionally left blank because many parts are already covered by the broad category allowances above; adding them again would double-count the budget. Filament remains unpriced, as requested. Rows with unknown dimensions, unresolved design revision or TBD quantities still need confirmation.
+
 - The current priced rows in `BOM.csv` total **$755.43 USD** (approximately **₹70,013** at the repository's stated reference conversion of 1 USD = ₹92.68).
 - The filament row is now **unpriced**: material is listed, but quantity and cost are blank/TBD. No printing cost has been added to the master BOM subtotal.
 - The subtotal retains a **$24.01 unitemized reconciliation allowance** from the earlier user-provided target. It is not a verified component price.
